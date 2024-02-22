@@ -1,27 +1,66 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    border: none;
-    outline: none;
-    /* overflow-y: none; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+  /* overflow-y: none; */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #dadada; */
+  background-color: springgreen;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ::selection {
-    background: rgb(104, 98, 98);
-    color: #ef6a27;
+  background: rgb(104, 98, 98);
+  color: #ef6a27;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1.5%;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #87ceeb;
+  color: rgb(69, 77, 84);
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: 1px solid transparent;
+  transition: all .5s ease;
+}
+.btn:hover {
+  background-color: rgb(49, 86, 205);
+  color: rgb(214, 222, 231);
+}
+.btn:active {
+    background-color: rgb(45, 80, 95); 
+}
+.btn:focus {
+    outline-color:#87ceeb;
+}
+
+.header {
+  background-color: rgb(227, 126, 197);
+  padding: 10px 0px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
