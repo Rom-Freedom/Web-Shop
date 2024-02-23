@@ -1,7 +1,9 @@
-import { navigation } from '../main.js'
+/* import { router } from '../main.js'
+
+console.log(router) */
 
 // Create Header
-export function getHeader() {
+export function getHeader(router) {
     //Create Header block
     const header = document.createElement('header')
     header.classList.add('header')
@@ -13,33 +15,36 @@ export function getHeader() {
     nav.classList.add('navigation')
     //Create free nav buttons
     let link1 = document.createElement('a')
-    link1.href = ''
+    link1.href = '/'
     link1.classList.add('btn')
     link1.textContent = 'Main page'
+    /* link1.setAttribute('data-navigo', true) */
 
     link1.addEventListener('click', function(event) {
         event.preventDefault()
-        navigation()
+        router.navigate('/');
     })
 
     let link2 = document.createElement('a')
-    link2.href = ''
+    link2.href = '/catalog'
     link2.classList.add('btn')
     link2.textContent = 'Catalogue'
+    /* link2.setAttribute('data-navigo', true) */
 
     link2.addEventListener('click', function(event) {
         event.preventDefault()
-        navigation('catalog')
+        router.navigate('/catalog');
     })
 
     let link3 = document.createElement('a')
-    link3.href = ''
+    link3.href = '/basket'
     link3.classList.add('btn')
     link3.textContent = 'Bucket'
+    /* link3.setAttribute('data-navigo', true) */
 
     link3.addEventListener('click', function(event) {
         event.preventDefault()
-        navigation('basket')
+        router.navigate('/basket');
     })
     //Add links into nav menu
     nav.append(link1, link2, link3)
