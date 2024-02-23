@@ -72,6 +72,14 @@ function getMainTitle(text) {
     return title
 }
 
+//Description of a good
+function getDesc(text) {
+    const desc = document.createElement('p')
+    desc.classList.add('desc')
+    desc.textContent = text
+    return desc
+}
+
 //Main Page
 function getMainPage() {
     const page = document.createElement('div')
@@ -91,9 +99,55 @@ function getMainPage() {
     return page
 }
 
+//Product Page
+function getProductPage() {
+    const page = document.createElement('div')
+    page.classList.add('page', 'product-page', 'container')
+
+    const mainTitle = getMainTitle('Product')
+    const desc = getDesc('The page is under construction')
+
+    page.append(mainTitle, desc)
+    return page
+}
+
+//Catalog
+function getCatalogPage() {
+    const page = document.createElement('div')
+    page.classList.add('page', 'catalog-page', 'container')
+
+    const mainTitle = getMainTitle('Catalog')
+    const desc = getDesc('The page is under construction')
+
+    page.append(mainTitle, desc)
+    return page
+}
+
+//Basket
+function getBasketPage() {
+    const page = document.createElement('div')
+    page.classList.add('page', 'basket-page', 'container')
+
+    const mainTitle = getMainTitle('Basket')
+    const catalog = getDesc('The page is under construction')
+
+    page.append(mainTitle, catalog)
+    return page
+}
+
 const header = getHeader()
 const pageContainer = getPageContainer()
-const mainPage = getMainPage()
-pageContainer.append(mainPage) 
+
+/* const mainPage = getMainPage()
+pageContainer.append(mainPage) */ 
+
+/* const productPage = getProductPage()
+pageContainer.append(productPage) */
+
+/* const catalogPage = getCatalogPage()
+pageContainer.append(catalogPage) */
+
+const basketPage = getBasketPage()
+pageContainer.append(basketPage)
 
 app.append(header, pageContainer)

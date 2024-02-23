@@ -81,6 +81,11 @@ img {
     margin-bottom: 20px;
 }
 
+/* Description */
+.desc {
+    
+}
+
 /* List of goods */
 .product-list {
     display: flex;
