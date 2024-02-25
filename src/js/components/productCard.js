@@ -1,3 +1,5 @@
+import { router } from '../main'
+
 //Product Cards
 export function getProductCard(title, price) {
     const item = document.createElement('li')
@@ -5,7 +7,17 @@ export function getProductCard(title, price) {
 
     const productTitle = document.createElement('h2')
     productTitle.classList.add('product-list__title')
-    productTitle.textContent = title
+
+    let ProductLink = document.createElement('a')
+    ProductLink.textContent = title
+    ProductLink.href = ''
+
+    ProductLink.addEventListener('click', function(event) {
+        event.preventDefault()
+        router.navigate('/product');
+    })
+
+    productTitle.append(ProductLink)
 
     const Productprice = document.createElement('strong')
     Productprice.classList.add('product-list__price')

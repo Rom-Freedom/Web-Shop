@@ -598,16 +598,24 @@ function getMainPage() {
 }
 
 },{"../components/mainTitle.js":"1BNwr","../components/productCard.js":"6onfN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6onfN":[function(require,module,exports) {
-//Product Cards
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+//Product Cards
 parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
+var _main = require("../main");
 function getProductCard(title, price) {
     const item = document.createElement("li");
     item.classList.add("product-list__item");
     const productTitle = document.createElement("h2");
     productTitle.classList.add("product-list__title");
-    productTitle.textContent = title;
+    let ProductLink = document.createElement("a");
+    ProductLink.textContent = title;
+    ProductLink.href = "";
+    ProductLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _main.router).navigate("/product");
+    });
+    productTitle.append(ProductLink);
     const Productprice = document.createElement("strong");
     Productprice.classList.add("product-list__price");
     Productprice.textContent = `${price} $`;
@@ -619,6 +627,6 @@ function getProductCard(title, price) {
     return item;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["62zNd"], null, "parcelRequiref824")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../main":"1SICI"}]},["62zNd"], null, "parcelRequiref824")
 
 //# sourceMappingURL=main.00ff3c8c.js.map

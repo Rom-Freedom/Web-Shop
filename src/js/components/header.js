@@ -1,9 +1,7 @@
-/* import { router } from '../main.js'
-
-console.log(router) */
+import { router } from '../main'
 
 // Create Header
-export function getHeader(router) {
+export function getHeader() {
     //Create Header block
     const header = document.createElement('header')
     header.classList.add('header')

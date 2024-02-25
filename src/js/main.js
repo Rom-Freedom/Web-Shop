@@ -7,9 +7,9 @@ import { getDesc } from './components/desc.js'
 const app = document.getElementById('app')
 
 
-const router = new Navigo('/');
+export const router = new Navigo('/');
 
-const header = getHeader(router)
+const header = getHeader()
 const pageContainer = getPageContainer()
 
 
@@ -32,6 +32,14 @@ router.on('/basket', async () => {
     const ModuleBasket = await import('./pages/basket.js')
     const BasketPage = ModuleBasket.getBasketPage() 
     pageContainer.append(BasketPage)
+});
+
+//When is clicked by the product is imported product js module
+router.on('/product', async () => {
+    pageContainer.innerHTML = ''
+    const ModuleProduct = await import('./pages/product.js')
+    const productPage = ModuleProduct.getProductPage() 
+    pageContainer.append(productPage)
 });
 
 router.resolve();
