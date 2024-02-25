@@ -35,10 +35,10 @@ router.on('/basket', async () => {
 });
 
 //When is clicked by the product is imported product js module
-router.on('/product', async () => {
+router.on('/product/:title', async ({ data }) => {
     pageContainer.innerHTML = ''
     const ModuleProduct = await import('./pages/product.js')
-    const productPage = ModuleProduct.getProductPage() 
+    const productPage = ModuleProduct.getProductPage(data.title) 
     pageContainer.append(productPage)
 });
 

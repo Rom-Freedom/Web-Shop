@@ -14,7 +14,7 @@ export function getProductCard(title, price) {
 
     ProductLink.addEventListener('click', function(event) {
         event.preventDefault()
-        router.navigate('/product');
+        router.navigate(`/product/${title}`);
     })
 
     productTitle.append(ProductLink)

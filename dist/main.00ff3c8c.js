@@ -592,7 +592,7 @@ function getMainPage() {
     const list = document.createElement("ul");
     list.classList.add("product-list");
     //Create three cards
-    list.append((0, _productCardJs.getProductCard)("Good 1", 400), (0, _productCardJs.getProductCard)("Good 2", 600), (0, _productCardJs.getProductCard)("Good 3", 750));
+    list.append((0, _productCardJs.getProductCard)("Good_1", 400), (0, _productCardJs.getProductCard)("Good_2", 600), (0, _productCardJs.getProductCard)("Good_3", 750));
     page.append(mainTitle, list);
     return page;
 }
@@ -613,7 +613,7 @@ function getProductCard(title, price) {
     ProductLink.href = "";
     ProductLink.addEventListener("click", function(event) {
         event.preventDefault();
-        (0, _main.router).navigate("/product");
+        (0, _main.router).navigate(`/product/${title}`);
     });
     productTitle.append(ProductLink);
     const Productprice = document.createElement("strong");

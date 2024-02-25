@@ -11,9 +11,9 @@ export function getMainPage() {
 
 //Create three cards
 list.append(
-    getProductCard('Good 1', 400),
-    getProductCard('Good 2', 600),
-    getProductCard('Good 3', 750),
+    getProductCard('Good_1', 400),
+    getProductCard('Good_2', 600),
+    getProductCard('Good_3', 750),
 )
 
 page.append(mainTitle, list)

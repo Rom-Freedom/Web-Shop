@@ -611,10 +611,10 @@ router.on("/basket", async ()=>{
     pageContainer.append(BasketPage);
 });
 //When is clicked by the product is imported product js module
-router.on("/product", async ()=>{
+router.on("/product/:title", async ({ data })=>{
     pageContainer.innerHTML = "";
     const ModuleProduct = await require("d772a986a2c25dfe");
-    const productPage = ModuleProduct.getProductPage();
+    const productPage = ModuleProduct.getProductPage(data.title);
     pageContainer.append(productPage);
 });
 router.resolve();

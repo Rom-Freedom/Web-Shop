@@ -585,10 +585,10 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getProductPage", ()=>getProductPage);
 var _mainTitleJs = require("../components/mainTitle.js");
 var _descJs = require("../components/desc.js");
-function getProductPage() {
+function getProductPage(title) {
     const page = document.createElement("div");
     page.classList.add("page", "product-page", "container");
-    const mainTitle = (0, _mainTitleJs.getMainTitle)("Product");
+    const mainTitle = (0, _mainTitleJs.getMainTitle)(title);
     const desc = (0, _descJs.getDesc)("The page is under construction");
     page.append(mainTitle, desc);
     return page;
