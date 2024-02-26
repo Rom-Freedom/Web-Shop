@@ -583,8 +583,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Basket
 parcelHelpers.export(exports, "getBasketPage", ()=>getBasketPage);
-var _mainTitleJs = require("../components/mainTitle.js");
-var _descJs = require("../components/desc.js");
+var _mainTitleJs = require("/src/js/components/mainTitle.js");
+var _descJs = require("/src/js/components/desc.js");
 function getBasketPage() {
     const page = document.createElement("div");
     page.classList.add("page", "basket-page", "container");
@@ -594,6 +594,6 @@ function getBasketPage() {
     return page;
 }
 
-},{"../components/mainTitle.js":"1BNwr","../components/desc.js":"7kCFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bvohk"], null, "parcelRequiref824")
+},{"/src/js/components/mainTitle.js":"1BNwr","/src/js/components/desc.js":"7kCFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bvohk"], null, "parcelRequiref824")
 
 //# sourceMappingURL=basket.690031ab.js.map

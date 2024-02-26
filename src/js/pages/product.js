@@ -1,5 +1,5 @@
-import { getMainTitle} from '../components/mainTitle.js'
-import { getDesc } from '../components/desc.js'
+import { getMainTitle} from '/src/js/components/mainTitle.js'
+import { getDesc } from '/src/js/components/desc.js'
 
 //Product Page
 export function getProductPage(title) {

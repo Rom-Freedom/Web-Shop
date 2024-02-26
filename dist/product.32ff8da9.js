@@ -583,8 +583,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Product Page
 parcelHelpers.export(exports, "getProductPage", ()=>getProductPage);
-var _mainTitleJs = require("../components/mainTitle.js");
-var _descJs = require("../components/desc.js");
+var _mainTitleJs = require("/src/js/components/mainTitle.js");
+var _descJs = require("/src/js/components/desc.js");
 function getProductPage(title) {
     const page = document.createElement("div");
     page.classList.add("page", "product-page", "container");
@@ -594,6 +594,6 @@ function getProductPage(title) {
     return page;
 }
 
-},{"../components/mainTitle.js":"1BNwr","../components/desc.js":"7kCFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["84xSO"], null, "parcelRequiref824")
+},{"/src/js/components/mainTitle.js":"1BNwr","/src/js/components/desc.js":"7kCFx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["84xSO"], null, "parcelRequiref824")
 
 //# sourceMappingURL=product.32ff8da9.js.map

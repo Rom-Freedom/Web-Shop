@@ -583,8 +583,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Main Page
 parcelHelpers.export(exports, "getMainPage", ()=>getMainPage);
-var _mainTitleJs = require("../components/mainTitle.js");
-var _productCardJs = require("../components/productCard.js");
+var _mainTitleJs = require("/src/js/components/mainTitle.js");
+var _productCardJs = require("/src/js/components/productCard.js");
 function getMainPage() {
     const page = document.createElement("div");
     page.classList.add("page", "main-page", "container");
@@ -597,12 +597,12 @@ function getMainPage() {
     return page;
 }
 
-},{"../components/mainTitle.js":"1BNwr","../components/productCard.js":"6onfN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6onfN":[function(require,module,exports) {
+},{"/src/js/components/mainTitle.js":"1BNwr","/src/js/components/productCard.js":"6onfN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6onfN":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Product Cards
 parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
-var _main = require("../main");
+var _main = require("/src/js/main");
 function getProductCard(title, price) {
     const item = document.createElement("li");
     item.classList.add("product-list__item");
@@ -627,6 +627,6 @@ function getProductCard(title, price) {
     return item;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../main":"1SICI"}]},["62zNd"], null, "parcelRequiref824")
+},{"/src/js/main":"1SICI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["62zNd"], null, "parcelRequiref824")
 
 //# sourceMappingURL=main.00ff3c8c.js.map
