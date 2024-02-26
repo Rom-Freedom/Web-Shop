@@ -27,6 +27,14 @@ router.on('/catalog', async () => {
     pageContainer.append(catalogPage)
 });
 
+//When is clicked by the product is imported product js module
+router.on('/product/:title', async ({ data }) => {
+    pageContainer.innerHTML = ''
+    const ModuleProduct = await import('/src/js/pages/product.js')
+    const productPage = ModuleProduct.getProductPage(data.title) 
+    pageContainer.append(productPage)
+});
+
 router.on('/basket', async () => {
     pageContainer.innerHTML = ''
     const ModuleBasket = await import('/src/js/pages/basket.js')
@@ -34,12 +42,12 @@ router.on('/basket', async () => {
     pageContainer.append(BasketPage)
 });
 
-//When is clicked by the product is imported product js module
-router.on('/product/:title', async ({ data }) => {
+// Order
+router.on('/order', async () => {
     pageContainer.innerHTML = ''
-    const ModuleProduct = await import('/src/js/pages/product.js')
-    const productPage = ModuleProduct.getProductPage(data.title) 
-    pageContainer.append(productPage)
+    const ModuleOrder = await import('/src/js/pages/order.js')
+    const OrderPage = ModuleOrder.getOrderPage()
+    pageContainer.append(OrderPage)
 });
 
 router.resolve();

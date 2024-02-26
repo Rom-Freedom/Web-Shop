@@ -604,12 +604,6 @@ router.on("/catalog", async ()=>{
     const catalogPage = ModuleCatalog.getCatalogPage();
     pageContainer.append(catalogPage);
 });
-router.on("/basket", async ()=>{
-    pageContainer.innerHTML = "";
-    const ModuleBasket = await require("dd26f383febd9266");
-    const BasketPage = ModuleBasket.getBasketPage();
-    pageContainer.append(BasketPage);
-});
 //When is clicked by the product is imported product js module
 router.on("/product/:title", async ({ data })=>{
     pageContainer.innerHTML = "";
@@ -617,10 +611,23 @@ router.on("/product/:title", async ({ data })=>{
     const productPage = ModuleProduct.getProductPage(data.title);
     pageContainer.append(productPage);
 });
+router.on("/basket", async ()=>{
+    pageContainer.innerHTML = "";
+    const ModuleBasket = await require("dd26f383febd9266");
+    const BasketPage = ModuleBasket.getBasketPage();
+    pageContainer.append(BasketPage);
+});
+// Order
+router.on("/order", async ()=>{
+    pageContainer.innerHTML = "";
+    const ModuleOrder = await require("f5ba9bb331db9114");
+    const OrderPage = ModuleOrder.getOrderPage();
+    pageContainer.append(OrderPage);
+});
 router.resolve();
 app.append(header, pageContainer);
 
-},{"./components/mainTitle.js":"1BNwr","./components/desc.js":"7kCFx","navigo":"fuSlc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/header.js":"iODzc","/src/js/components/pageContainer.js":"6pXtL","76e43f5098be4a51":"dsI8R","dd26f383febd9266":"9L8T0","17e44ed2f03d434c":"33L2L","c7fcb629e5c1095b":"adHFQ"}],"1BNwr":[function(require,module,exports) {
+},{"./components/mainTitle.js":"1BNwr","./components/desc.js":"7kCFx","navigo":"fuSlc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/header.js":"iODzc","/src/js/components/pageContainer.js":"6pXtL","76e43f5098be4a51":"dsI8R","dd26f383febd9266":"9L8T0","c7fcb629e5c1095b":"adHFQ","17e44ed2f03d434c":"33L2L","f5ba9bb331db9114":"as4Qc"}],"1BNwr":[function(require,module,exports) {
 //Main Title
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -1361,18 +1368,24 @@ module.exports = require("91805c960935cfb7")(require("1d7c6f7c056dc93b").getBund
     throw err;
 }).then(()=>module.bundle.root("ai5BV"));
 
-},{"91805c960935cfb7":"61B45","1d7c6f7c056dc93b":"lgJ39"}],"33L2L":[function(require,module,exports) {
-module.exports = require("b224caeb7caf0dc1")(require("8b283eaf5610e6e0").getBundleURL("10Mjw") + "product.32ff8da9.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root("ajSHU"));
-
-},{"b224caeb7caf0dc1":"61B45","8b283eaf5610e6e0":"lgJ39"}],"adHFQ":[function(require,module,exports) {
+},{"91805c960935cfb7":"61B45","1d7c6f7c056dc93b":"lgJ39"}],"adHFQ":[function(require,module,exports) {
 module.exports = require("5da56e93278844c")(require("8ca10d49fec08695").getBundleURL("10Mjw") + "catalog.bae1f746.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
 }).then(()=>module.bundle.root("enWwp"));
 
-},{"5da56e93278844c":"61B45","8ca10d49fec08695":"lgJ39"}]},["iqNlW","1SICI"], "1SICI", "parcelRequiref824")
+},{"5da56e93278844c":"61B45","8ca10d49fec08695":"lgJ39"}],"33L2L":[function(require,module,exports) {
+module.exports = require("b224caeb7caf0dc1")(require("8b283eaf5610e6e0").getBundleURL("10Mjw") + "product.32ff8da9.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("ajSHU"));
+
+},{"b224caeb7caf0dc1":"61B45","8b283eaf5610e6e0":"lgJ39"}],"as4Qc":[function(require,module,exports) {
+module.exports = require("e2aba926f440b8e7")(require("4fa11b962a6e09a0").getBundleURL("10Mjw") + "order.16121d68.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("gi2Xn"));
+
+},{"e2aba926f440b8e7":"61B45","4fa11b962a6e09a0":"lgJ39"}]},["iqNlW","1SICI"], "1SICI", "parcelRequiref824")
 
 //# sourceMappingURL=index.18dbc454.js.map
