@@ -1161,18 +1161,8 @@ parcelHelpers.defineInteropFlag(exports);
 // Create Header
 parcelHelpers.export(exports, "getHeader", ()=>getHeader);
 var _main = require("/src/js/main");
+var _navigationLinkJs = require("/src/js/components/navigationLink/navigationLink.js");
 var _headerCss = require("./header.css");
-function getNavigationLink(path, title = "") {
-    let link = document.createElement("a");
-    link.href = path;
-    link.classList.add("btn");
-    link.textContent = title;
-    /* link1.setAttribute('data-navigo', true) */ link.addEventListener("click", function(event) {
-        event.preventDefault();
-        (0, _main.router).navigate(path);
-    });
-    return link;
-}
 function getHeader() {
     //Create Header block
     const header = document.createElement("header");
@@ -1184,9 +1174,9 @@ function getHeader() {
     const nav = document.createElement("nav");
     nav.classList.add("header__navigation");
     //Create free nav buttons
-    let link1 = getNavigationLink("/", "Main page");
-    let link2 = getNavigationLink("/catalog", "Catalogue");
-    let link3 = getNavigationLink("/basket", "Bucket");
+    let link1 = (0, _navigationLinkJs.getNavigationLink)("/", "Main page");
+    let link2 = (0, _navigationLinkJs.getNavigationLink)("/catalog", "Catalogue");
+    let link3 = (0, _navigationLinkJs.getNavigationLink)("/basket", "Bucket");
     //Add links into nav menu
     nav.append(link1, link2, link3);
     //Add nav to container
@@ -1195,7 +1185,7 @@ function getHeader() {
     return header;
 }
 
-},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
+},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/navigationLink/navigationLink.js":"9DXZC"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1225,7 +1215,25 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"2aBBT":[function(require,module,exports) {
+},{}],"9DXZC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getNavigationLink", ()=>getNavigationLink);
+var _main = require("/src/js/main");
+var _navigationLinkCss = require("./navigationLink.css");
+function getNavigationLink(path, title = "") {
+    let link = document.createElement("a");
+    link.href = path;
+    link.classList.add("btn");
+    link.textContent = title;
+    /* link1.setAttribute('data-navigo', true) */ link.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _main.router).navigate(path);
+    });
+    return link;
+}
+
+},{"/src/js/main":"1SICI","./navigationLink.css":"arnVZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"arnVZ":[function() {},{}],"2aBBT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Description of a good
