@@ -619,15 +619,24 @@ router.on("/basket", async ()=>{
 });
 // Order
 router.on("/order", async ()=>{
+    router.navigate("/");
+    return;
     pageContainer.innerHTML = "";
     const ModuleOrder = await require("f5ba9bb331db9114");
     const OrderPage = ModuleOrder.getOrderPage();
     pageContainer.append(OrderPage);
 });
+// A page is not found
+router.notFound(async ()=>{
+    pageContainer.innerHTML = "";
+    const ModuleNotFound = await require("f1ed06dc22f0a59b");
+    const NotFoundPage = ModuleNotFound.getNotFoundPage();
+    pageContainer.append(NotFoundPage);
+});
 router.resolve();
 app.append(header, pageContainer);
 
-},{"./components/mainTitle.js":"1BNwr","./components/desc.js":"7kCFx","navigo":"fuSlc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/header.js":"iODzc","/src/js/components/pageContainer.js":"6pXtL","76e43f5098be4a51":"dsI8R","dd26f383febd9266":"9L8T0","c7fcb629e5c1095b":"adHFQ","17e44ed2f03d434c":"33L2L","f5ba9bb331db9114":"as4Qc"}],"1BNwr":[function(require,module,exports) {
+},{"./components/mainTitle.js":"1BNwr","./components/desc.js":"7kCFx","navigo":"fuSlc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/header.js":"iODzc","/src/js/components/pageContainer.js":"6pXtL","76e43f5098be4a51":"dsI8R","dd26f383febd9266":"9L8T0","c7fcb629e5c1095b":"adHFQ","17e44ed2f03d434c":"33L2L","f5ba9bb331db9114":"as4Qc","f1ed06dc22f0a59b":"6Z9YI"}],"1BNwr":[function(require,module,exports) {
 //Main Title
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -1386,6 +1395,12 @@ module.exports = require("e2aba926f440b8e7")(require("4fa11b962a6e09a0").getBund
     throw err;
 }).then(()=>module.bundle.root("gi2Xn"));
 
-},{"e2aba926f440b8e7":"61B45","4fa11b962a6e09a0":"lgJ39"}]},["iqNlW","1SICI"], "1SICI", "parcelRequiref824")
+},{"e2aba926f440b8e7":"61B45","4fa11b962a6e09a0":"lgJ39"}],"6Z9YI":[function(require,module,exports) {
+module.exports = require("961e76dcd1c2bc86")(require("64885bf620b971f5").getBundleURL("10Mjw") + "notFound.4f16eca9.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("eTtiY"));
+
+},{"961e76dcd1c2bc86":"61B45","64885bf620b971f5":"lgJ39"}]},["iqNlW","1SICI"], "1SICI", "parcelRequiref824")
 
 //# sourceMappingURL=index.18dbc454.js.map

@@ -44,10 +44,24 @@ router.on('/basket', async () => {
 
 // Order
 router.on('/order', async () => {
+
+    if (true) {
+        router.navigate('/');
+        return
+    }
+
     pageContainer.innerHTML = ''
     const ModuleOrder = await import('/src/js/pages/order.js')
     const OrderPage = ModuleOrder.getOrderPage()
     pageContainer.append(OrderPage)
+});
+
+// A page is not found
+router.notFound(async () => {
+    pageContainer.innerHTML = ''
+    const ModuleNotFound = await import('/src/js/pages/notFound.js')
+    const NotFoundPage = ModuleNotFound.getNotFoundPage()
+    pageContainer.append(NotFoundPage)
 });
 
 router.resolve();
