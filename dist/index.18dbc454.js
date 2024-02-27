@@ -1162,6 +1162,17 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getHeader", ()=>getHeader);
 var _main = require("/src/js/main");
 var _headerCss = require("./header.css");
+function getNavigationLink(path, title = "") {
+    let link = document.createElement("a");
+    link.href = path;
+    link.classList.add("btn");
+    link.textContent = title;
+    /* link1.setAttribute('data-navigo', true) */ link.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _main.router).navigate(path);
+    });
+    return link;
+}
 function getHeader() {
     //Create Header block
     const header = document.createElement("header");
@@ -1171,32 +1182,11 @@ function getHeader() {
     container.classList.add("container", "header__container");
     //Create navigation menu
     const nav = document.createElement("nav");
-    nav.classList.add("navigation");
+    nav.classList.add("header__navigation");
     //Create free nav buttons
-    let link1 = document.createElement("a");
-    link1.href = "/";
-    link1.classList.add("btn");
-    link1.textContent = "Main page";
-    /* link1.setAttribute('data-navigo', true) */ link1.addEventListener("click", function(event) {
-        event.preventDefault();
-        (0, _main.router).navigate("/");
-    });
-    let link2 = document.createElement("a");
-    link2.href = "/catalog";
-    link2.classList.add("btn");
-    link2.textContent = "Catalogue";
-    /* link2.setAttribute('data-navigo', true) */ link2.addEventListener("click", function(event) {
-        event.preventDefault();
-        (0, _main.router).navigate("/catalog");
-    });
-    let link3 = document.createElement("a");
-    link3.href = "/basket";
-    link3.classList.add("btn");
-    link3.textContent = "Bucket";
-    /* link3.setAttribute('data-navigo', true) */ link3.addEventListener("click", function(event) {
-        event.preventDefault();
-        (0, _main.router).navigate("/basket");
-    });
+    let link1 = getNavigationLink("/", "Main page");
+    let link2 = getNavigationLink("/catalog", "Catalogue");
+    let link3 = getNavigationLink("/basket", "Bucket");
     //Add links into nav menu
     nav.append(link1, link2, link3);
     //Add nav to container

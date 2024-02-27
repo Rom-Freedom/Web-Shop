@@ -191,7 +191,7 @@ template, [hidden] {
   padding: 10px 0;
 }
 
-.navigation {
+.header__navigation {
   align-items: center;
   gap: 20px;
   display: flex;
