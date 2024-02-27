@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .header__logo {
+    align-self: center;
+  }
   
   .header__navigation {
     display: flex;

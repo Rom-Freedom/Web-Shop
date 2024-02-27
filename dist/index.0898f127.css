@@ -195,6 +195,10 @@ template, [hidden] {
   display: flex;
 }
 
+.header__logo {
+  align-self: center;
+}
+
 .header__navigation {
   display: flex;
 }
@@ -226,6 +230,10 @@ template, [hidden] {
 
 .navigation-link:focus-visible {
   background-color: #dce8ff;
+}
+
+.logo {
+  height: 35px;
 }
 
 

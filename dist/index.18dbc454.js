@@ -1162,6 +1162,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getHeader", ()=>getHeader);
 var _main = require("/src/js/main");
 var _navigationLinkJs = require("/src/js/components/navigationLink/navigationLink.js");
+var _ = require("/src/js/components/logo/logo/");
 var _headerCss = require("./header.css");
 function getHeader() {
     //Create Header block
@@ -1170,6 +1171,8 @@ function getHeader() {
     //Create div container into Header block
     const container = document.createElement("div");
     container.classList.add("container", "header__container");
+    const logo = (0, _.getLogo)();
+    logo.classList.add("header__logo");
     //Create navigation menu
     const nav = document.createElement("nav");
     nav.classList.add("header__navigation");
@@ -1180,12 +1183,12 @@ function getHeader() {
     //Add links into nav menu
     nav.append(link1, link2, link3);
     //Add nav to container
-    container.append(nav);
+    container.append(logo, nav);
     header.append(container);
     return header;
 }
 
-},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/navigationLink/navigationLink.js":"9DXZC"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
+},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/navigationLink/navigationLink.js":"9DXZC","/src/js/components/logo/logo/":"3UqdW"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1233,7 +1236,61 @@ function getNavigationLink(path, title = "") {
     return link;
 }
 
-},{"/src/js/main":"1SICI","./navigationLink.css":"arnVZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"arnVZ":[function() {},{}],"2aBBT":[function(require,module,exports) {
+},{"/src/js/main":"1SICI","./navigationLink.css":"arnVZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"arnVZ":[function() {},{}],"3UqdW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Create a logo
+parcelHelpers.export(exports, "getLogo", ()=>getLogo);
+var _logoCss = require("./logo.css");
+var _logoSvg = require("/src/assets/img/logo.svg");
+var _logoSvgDefault = parcelHelpers.interopDefault(_logoSvg);
+function getLogo() {
+    const logo = document.createElement("img");
+    logo.classList.add("logo");
+    console.log((0, _logoSvgDefault.default));
+    logo.src = (0, _logoSvgDefault.default);
+    return logo;
+}
+
+},{"./logo.css":"fgPjk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/assets/img/logo.svg":"1diId"}],"fgPjk":[function() {},{}],"1diId":[function(require,module,exports) {
+module.exports = require("5b3aa14cd0d9bc14").getBundleURL("10Mjw") + "logo.e1e57082.svg" + "?" + Date.now();
+
+},{"5b3aa14cd0d9bc14":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"2aBBT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Description of a good
@@ -1312,41 +1369,6 @@ module.exports = function(loader, type) {
         });
     };
 };
-
-},{}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
 
 },{}],"61B45":[function(require,module,exports) {
 "use strict";
