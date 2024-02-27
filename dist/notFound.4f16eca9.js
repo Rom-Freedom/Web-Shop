@@ -583,7 +583,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //The page wasn't found
 parcelHelpers.export(exports, "getNotFoundPage", ()=>getNotFoundPage);
-var _mainTitleJs = require("/src/js/components/mainTitle.js");
+var _mainTitleJs = require("/src/js/components/mainTitle/mainTitle.js");
 function getNotFoundPage() {
     const page = document.createElement("div");
     page.classList.add("page", "catalog-page", "container");
@@ -592,6 +592,6 @@ function getNotFoundPage() {
     return page;
 }
 
-},{"/src/js/components/mainTitle.js":"1BNwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7Ko4a"], null, "parcelRequiref824")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if"}]},["7Ko4a"], null, "parcelRequiref824")
 
 //# sourceMappingURL=notFound.4f16eca9.js.map

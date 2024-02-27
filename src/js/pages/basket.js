@@ -1,6 +1,6 @@
 import { router } from '/src/js/main'
-import { getMainTitle} from '/src/js/components/mainTitle.js'
-import { getDesc } from '/src/js/components/desc.js'
+import { getMainTitle} from '/src/js/components/mainTitle/mainTitle.js'
+import { getDesc } from '/src/js/components/desc/desc.js'
 
 //Basket
 export function getBasketPage() {

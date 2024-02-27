@@ -54,40 +54,13 @@ img {
   outline-color: #87ceeb;
 }
 
-.header {
-  background-color: rgb(227, 126, 197);
-  padding: 10px 0px;
-  margin-bottom: 20px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Container for all pages */
-.page-container { 
-}
-
 .page {
     background-color: #198713;
     padding: 20px;
 }
 
-/* Main Heading */
-.main-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-/* Description */
-.desc {
-    
-}
-
 /* List of goods */
-.product-list {
+/* .product-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -106,6 +79,6 @@ img {
 .product-list__price {
     font-size: 20px;
     margin-bottom: 15px;
-}
+} */
 
 

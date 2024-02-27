@@ -1,8 +1,8 @@
 import Navigo from 'navigo'
-import { getHeader } from '/src/js/components/header.js'
-import { getPageContainer } from '/src/js/components/pageContainer.js'
-import { getMainTitle} from './components/mainTitle.js'
-import { getDesc } from './components/desc.js'
+import { getHeader } from '/src/js/components/header/header.js'
+import { getPageContainer } from '/src/js/components/pageContainer/pageContainer.js'
+import { getMainTitle} from './components/mainTitle/mainTitle.js'
+import { getDesc } from './components/desc/desc.js'
 
 const app = document.getElementById('app')
 

@@ -584,10 +584,10 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "router", ()=>router);
 var _navigo = require("navigo");
 var _navigoDefault = parcelHelpers.interopDefault(_navigo);
-var _headerJs = require("/src/js/components/header.js");
-var _pageContainerJs = require("/src/js/components/pageContainer.js");
-var _mainTitleJs = require("./components/mainTitle.js");
-var _descJs = require("./components/desc.js");
+var _headerJs = require("/src/js/components/header/header.js");
+var _pageContainerJs = require("/src/js/components/pageContainer/pageContainer.js");
+var _mainTitleJs = require("./components/mainTitle/mainTitle.js");
+var _descJs = require("./components/desc/desc.js");
 const app = document.getElementById("app");
 const router = new (0, _navigoDefault.default)("/");
 const header = (0, _headerJs.getHeader)();
@@ -636,61 +636,7 @@ router.notFound(async ()=>{
 router.resolve();
 app.append(header, pageContainer);
 
-},{"./components/mainTitle.js":"1BNwr","./components/desc.js":"7kCFx","navigo":"fuSlc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/header.js":"iODzc","/src/js/components/pageContainer.js":"6pXtL","76e43f5098be4a51":"dsI8R","dd26f383febd9266":"9L8T0","c7fcb629e5c1095b":"adHFQ","17e44ed2f03d434c":"33L2L","f5ba9bb331db9114":"as4Qc","f1ed06dc22f0a59b":"6Z9YI"}],"1BNwr":[function(require,module,exports) {
-//Main Title
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getMainTitle", ()=>getMainTitle);
-function getMainTitle(text) {
-    const title = document.createElement("h1");
-    title.classList.add("main-title");
-    title.textContent = text;
-    return title;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"7kCFx":[function(require,module,exports) {
-//Description of a good
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getDesc", ()=>getDesc);
-function getDesc(text) {
-    const desc = document.createElement("p");
-    desc.classList.add("desc");
-    desc.textContent = text;
-    return desc;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fuSlc":[function(require,module,exports) {
+},{"navigo":"fuSlc","/src/js/components/header/header.js":"k3piG","./components/desc/desc.js":"2aBBT","76e43f5098be4a51":"lLZeO","c7fcb629e5c1095b":"adHFQ","17e44ed2f03d434c":"33L2L","dd26f383febd9266":"9L8T0","f5ba9bb331db9114":"as4Qc","f1ed06dc22f0a59b":"6Z9YI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./components/mainTitle/mainTitle.js":"ki5if","/src/js/components/pageContainer/pageContainer.js":"ht0nH"}],"fuSlc":[function(require,module,exports) {
 !function(t, n) {
     module.exports = n();
 }("undefined" != typeof self ? self : this, function() {
@@ -1209,12 +1155,13 @@ function getDesc(text) {
     }().default;
 });
 
-},{}],"iODzc":[function(require,module,exports) {
+},{}],"k3piG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 // Create Header
 parcelHelpers.export(exports, "getHeader", ()=>getHeader);
 var _main = require("/src/js/main");
+var _headerCss = require("./header.css");
 function getHeader() {
     //Create Header block
     const header = document.createElement("header");
@@ -1258,59 +1205,91 @@ function getHeader() {
     return header;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/main":"1SICI"}],"6pXtL":[function(require,module,exports) {
-/* Container Page (a block for all pages) */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"2aBBT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getPageContainer", ()=>getPageContainer);
-function getPageContainer() {
-    const main = document.createElement("main");
-    main.classList.add("page-container");
-    return main;
+//Description of a good
+parcelHelpers.export(exports, "getDesc", ()=>getDesc);
+var _descCss = require("./desc.css");
+function getDesc(text) {
+    const desc = document.createElement("p");
+    desc.classList.add("desc");
+    desc.textContent = text;
+    return desc;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsI8R":[function(require,module,exports) {
-module.exports = require("eb43698340671473")(require("e9bb0cab49414036").getBundleURL("10Mjw") + "main.00ff3c8c.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root("5jeM2"));
+},{"./desc.css":"kfYoF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kfYoF":[function() {},{}],"lLZeO":[function(require,module,exports) {
+module.exports = Promise.all([
+    require("fe2858a6d78434c2")(require("70e8eed2b337ce05").getBundleURL("10Mjw") + "main.e1fccb57.css" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    }),
+    require("7a42ca90dd3b9b2a")(require("70e8eed2b337ce05").getBundleURL("10Mjw") + "main.00ff3c8c.js" + "?" + Date.now()).catch((err)=>{
+        delete module.bundle.cache[module.id];
+        throw err;
+    })
+]).then(()=>module.bundle.root("5jeM2"));
 
-},{"eb43698340671473":"61B45","e9bb0cab49414036":"lgJ39"}],"61B45":[function(require,module,exports) {
+},{"fe2858a6d78434c2":"1MWPE","70e8eed2b337ce05":"lgJ39","7a42ca90dd3b9b2a":"61B45"}],"1MWPE":[function(require,module,exports) {
 "use strict";
-var cacheLoader = require("ca2a84f7fa4a3bb0");
+var cacheLoader = require("ae7c5e215a4907e2");
 module.exports = cacheLoader(function(bundle) {
     return new Promise(function(resolve, reject) {
-        // Don't insert the same script twice (e.g. if it was already in the HTML)
-        var existingScripts = document.getElementsByTagName("script");
-        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
-            return script.src === bundle;
+        // Don't insert the same link element twice (e.g. if it was already in the HTML)
+        var existingLinks = document.getElementsByTagName("link");
+        if ([].concat(existingLinks).some(function isCurrentBundle(link) {
+            return link.href === bundle && link.rel.indexOf("stylesheet") > -1;
         })) {
             resolve();
             return;
         }
-        var preloadLink = document.createElement("link");
-        preloadLink.href = bundle;
-        preloadLink.rel = "preload";
-        preloadLink.as = "script";
-        document.head.appendChild(preloadLink);
-        var script = document.createElement("script");
-        script.async = true;
-        script.type = "text/javascript";
-        script.src = bundle;
-        script.onerror = function(e) {
-            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
-            script.onerror = script.onload = null;
-            script.remove();
-            reject(error);
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = bundle;
+        link.onerror = function(e) {
+            link.onerror = link.onload = null;
+            link.remove();
+            reject(e);
         };
-        script.onload = function() {
-            script.onerror = script.onload = null;
+        link.onload = function() {
+            link.onerror = link.onload = null;
             resolve();
         };
-        document.getElementsByTagName("head")[0].appendChild(script);
+        document.getElementsByTagName("head")[0].appendChild(link);
     });
 });
 
-},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
+},{"ae7c5e215a4907e2":"j49pS"}],"j49pS":[function(require,module,exports) {
 "use strict";
 var cachedBundles = {};
 var cachedPreloads = {};
@@ -1371,13 +1350,43 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"9L8T0":[function(require,module,exports) {
-module.exports = require("91805c960935cfb7")(require("1d7c6f7c056dc93b").getBundleURL("10Mjw") + "basket.690031ab.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root("ai5BV"));
+},{}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
 
-},{"91805c960935cfb7":"61B45","1d7c6f7c056dc93b":"lgJ39"}],"adHFQ":[function(require,module,exports) {
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"adHFQ":[function(require,module,exports) {
 module.exports = require("5da56e93278844c")(require("8ca10d49fec08695").getBundleURL("10Mjw") + "catalog.bae1f746.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
@@ -1389,7 +1398,13 @@ module.exports = require("b224caeb7caf0dc1")(require("8b283eaf5610e6e0").getBund
     throw err;
 }).then(()=>module.bundle.root("ajSHU"));
 
-},{"b224caeb7caf0dc1":"61B45","8b283eaf5610e6e0":"lgJ39"}],"as4Qc":[function(require,module,exports) {
+},{"b224caeb7caf0dc1":"61B45","8b283eaf5610e6e0":"lgJ39"}],"9L8T0":[function(require,module,exports) {
+module.exports = require("91805c960935cfb7")(require("1d7c6f7c056dc93b").getBundleURL("10Mjw") + "basket.690031ab.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("ai5BV"));
+
+},{"91805c960935cfb7":"61B45","1d7c6f7c056dc93b":"lgJ39"}],"as4Qc":[function(require,module,exports) {
 module.exports = require("e2aba926f440b8e7")(require("4fa11b962a6e09a0").getBundleURL("10Mjw") + "order.16121d68.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
@@ -1401,6 +1416,30 @@ module.exports = require("961e76dcd1c2bc86")(require("64885bf620b971f5").getBund
     throw err;
 }).then(()=>module.bundle.root("eTtiY"));
 
-},{"961e76dcd1c2bc86":"61B45","64885bf620b971f5":"lgJ39"}]},["iqNlW","1SICI"], "1SICI", "parcelRequiref824")
+},{"961e76dcd1c2bc86":"61B45","64885bf620b971f5":"lgJ39"}],"ki5if":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Main Title
+parcelHelpers.export(exports, "getMainTitle", ()=>getMainTitle);
+var _mainTitleCss = require("./mainTitle.css");
+function getMainTitle(text) {
+    const title = document.createElement("h1");
+    title.classList.add("main-title");
+    title.textContent = text;
+    return title;
+}
+
+},{"./mainTitle.css":"8xezA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8xezA":[function() {},{}],"ht0nH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+/* Container Page (a block for all pages) */ parcelHelpers.export(exports, "getPageContainer", ()=>getPageContainer);
+var _pageContainerCss = require("./pageContainer.css");
+function getPageContainer() {
+    const main = document.createElement("main");
+    main.classList.add("page-container");
+    return main;
+}
+
+},{"./pageContainer.css":"cl5cT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cl5cT":[function() {},{}]},["iqNlW","1SICI"], "1SICI", "parcelRequiref824")
 
 //# sourceMappingURL=index.18dbc454.js.map

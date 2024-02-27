@@ -1,4 +1,4 @@
-import { getMainTitle} from '/src/js/components/mainTitle.js'
+import { getMainTitle} from '/src/js/components/mainTitle/mainTitle.js'
 
 //The page wasn't found
 export function getNotFoundPage() {

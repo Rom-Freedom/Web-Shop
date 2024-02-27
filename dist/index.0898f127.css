@@ -185,4 +185,20 @@ template, [hidden] {
   display: none;
 }
 
+.header {
+  background-color: #e37ec5;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.navigation {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+
+
+
+
 /*# sourceMappingURL=index.0898f127.css.map */
