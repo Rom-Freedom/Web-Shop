@@ -22,15 +22,31 @@ export function getHeader() {
   const nav = document.createElement("nav");
   nav.classList.add("header__navigation");
 
-  //Create free nav buttons
-  let link1 = getNavigationLink("/", "Main page");
-  let link2 = getNavigationLink("/catalog", "Catalogue");
-  let link3 = getNavigationLink("/basket", "Bucket");
+  const links = {
+    'home': getNavigationLink("/", "Main page"),
+    'catalog': getNavigationLink("/catalog", "Catalogue"),
+    'basket': basketBtn
+  }
 
   //Add links into nav menu
-  nav.append(link1, link2, link3);
+  for (const oneLink in links) {
+    nav.append(links[oneLink])
+  }
+
+  const setActiveLink = function (link = '') {
+    for (const oneLink in links) {
+        links[oneLink].classList.remove('active')
+    }
+    if (link !== '') {
+        links[link].classList.add('active')
+    }
+  }
+
   //Add nav to container
   container.append(logo, nav, basketBtn);
   header.append(container);
-  return header;
+  return { 
+    header,
+    setActiveLink
+  }
 }

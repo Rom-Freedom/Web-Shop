@@ -597,12 +597,14 @@ router.on("/", async ()=>{
     const ModuleMain = await require("76e43f5098be4a51");
     const mainPage = ModuleMain.getMainPage();
     pageContainer.append(mainPage);
+    header.setActiveLink("home");
 });
 router.on("/catalog", async ()=>{
     pageContainer.innerHTML = "";
     const ModuleCatalog = await require("c7fcb629e5c1095b");
     const catalogPage = ModuleCatalog.getCatalogPage();
     pageContainer.append(catalogPage);
+    header.setActiveLink("catalog");
 });
 //When is clicked by the product is imported product js module
 router.on("/product/:title", async ({ data })=>{
@@ -610,12 +612,14 @@ router.on("/product/:title", async ({ data })=>{
     const ModuleProduct = await require("17e44ed2f03d434c");
     const productPage = ModuleProduct.getProductPage(data.title);
     pageContainer.append(productPage);
+    header.setActiveLink();
 });
 router.on("/basket", async ()=>{
     pageContainer.innerHTML = "";
     const ModuleBasket = await require("dd26f383febd9266");
     const BasketPage = ModuleBasket.getBasketPage();
     pageContainer.append(BasketPage);
+    header.setActiveLink("basket");
 });
 // Order
 router.on("/order", async ()=>{
@@ -625,6 +629,7 @@ router.on("/order", async ()=>{
     const ModuleOrder = await require("f5ba9bb331db9114");
     const OrderPage = ModuleOrder.getOrderPage();
     pageContainer.append(OrderPage);
+    header.setActiveLink();
 });
 // A page is not found
 router.notFound(async ()=>{
@@ -632,9 +637,10 @@ router.notFound(async ()=>{
     const ModuleNotFound = await require("f1ed06dc22f0a59b");
     const NotFoundPage = ModuleNotFound.getNotFoundPage();
     pageContainer.append(NotFoundPage);
+    header.setActiveLink();
 });
 router.resolve();
-app.append(header, pageContainer);
+app.append(header.header, pageContainer);
 
 },{"navigo":"fuSlc","/src/js/components/header/header.js":"k3piG","./components/desc/desc.js":"2aBBT","76e43f5098be4a51":"lLZeO","c7fcb629e5c1095b":"adHFQ","17e44ed2f03d434c":"33L2L","dd26f383febd9266":"9L8T0","f5ba9bb331db9114":"as4Qc","f1ed06dc22f0a59b":"6Z9YI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./components/mainTitle/mainTitle.js":"ki5if","/src/js/components/pageContainer/pageContainer.js":"ht0nH"}],"fuSlc":[function(require,module,exports) {
 !function(t, n) {
@@ -1178,16 +1184,24 @@ function getHeader() {
     //Create navigation menu
     const nav = document.createElement("nav");
     nav.classList.add("header__navigation");
-    //Create free nav buttons
-    let link1 = (0, _navigationLinkJs.getNavigationLink)("/", "Main page");
-    let link2 = (0, _navigationLinkJs.getNavigationLink)("/catalog", "Catalogue");
-    let link3 = (0, _navigationLinkJs.getNavigationLink)("/basket", "Bucket");
+    const links = {
+        "home": (0, _navigationLinkJs.getNavigationLink)("/", "Main page"),
+        "catalog": (0, _navigationLinkJs.getNavigationLink)("/catalog", "Catalogue"),
+        "basket": basketBtn
+    };
     //Add links into nav menu
-    nav.append(link1, link2, link3);
+    for(const oneLink in links)nav.append(links[oneLink]);
+    const setActiveLink = function(link = "") {
+        for(const oneLink in links)links[oneLink].classList.remove("active");
+        if (link !== "") links[link].classList.add("active");
+    };
     //Add nav to container
     container.append(logo, nav, basketBtn);
     header.append(container);
-    return header;
+    return {
+        header,
+        setActiveLink
+    };
 }
 
 },{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/navigationLink/navigationLink.js":"9DXZC","/src/js/components/logo/logo/":"3UqdW","/src/js/components/basketBtn/basketBtn/":"fnQNK"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
@@ -1249,7 +1263,6 @@ var _logoSvgDefault = parcelHelpers.interopDefault(_logoSvg);
 function getLogo() {
     const logo = document.createElement("img");
     logo.classList.add("logo");
-    console.log((0, _logoSvgDefault.default));
     logo.src = (0, _logoSvgDefault.default);
     return logo;
 }
@@ -1312,7 +1325,7 @@ function getBasketBtn() {
     return basketBtn;
 }
 
-},{"./basketBtn.css":"c11TG","bundle-text:/src/assets/img/basket.svg":"6V9LR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/main":"1SICI"}],"c11TG":[function() {},{}],"6V9LR":[function(require,module,exports) {
+},{"/src/js/main":"1SICI","./basketBtn.css":"c11TG","bundle-text:/src/assets/img/basket.svg":"6V9LR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c11TG":[function() {},{}],"6V9LR":[function(require,module,exports) {
 module.exports = "<svg fill=\"#f98800\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.132 2.504 4.42 9H3a1.001 1.001 0 0 0-.965 1.263l2.799 10.263A2.004 2.004 0 0 0 6.764 22h10.473c.898 0 1.692-.605 1.93-1.475l2.799-10.263A.998.998 0 0 0 21 9h-1.42l-3.712-6.496-1.736.992L17.277 9H6.723l3.145-5.504-1.736-.992zM14 13h2v5h-2v-5zm-6 0h2v5H8v-5z\"></path></svg>";
 
 },{}],"2aBBT":[function(require,module,exports) {

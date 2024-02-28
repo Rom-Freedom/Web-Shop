@@ -248,6 +248,10 @@ template, [hidden] {
   display: flex;
 }
 
+.basket-btn.active {
+  background-color: #ececec;
+}
+
 .basket-btn svg {
   width: 25px;
   height: 25px;

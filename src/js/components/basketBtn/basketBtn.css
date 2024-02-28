@@ -11,9 +11,9 @@
     transition: background-color .3s;
   }
   
-  /* .basket-btn.active{
+  .basket-btn.active{
     background-color: rgb(236, 236, 236);
-  } */
+  }
   
   .basket-btn svg{
     width: 25px;
