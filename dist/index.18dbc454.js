@@ -1163,6 +1163,7 @@ parcelHelpers.export(exports, "getHeader", ()=>getHeader);
 var _main = require("/src/js/main");
 var _navigationLinkJs = require("/src/js/components/navigationLink/navigationLink.js");
 var _ = require("/src/js/components/logo/logo/");
+var _1 = require("/src/js/components/basketBtn/basketBtn/");
 var _headerCss = require("./header.css");
 function getHeader() {
     //Create Header block
@@ -1173,6 +1174,7 @@ function getHeader() {
     container.classList.add("container", "header__container");
     const logo = (0, _.getLogo)();
     logo.classList.add("header__logo");
+    const basketBtn = (0, _1.getBasketBtn)();
     //Create navigation menu
     const nav = document.createElement("nav");
     nav.classList.add("header__navigation");
@@ -1183,12 +1185,12 @@ function getHeader() {
     //Add links into nav menu
     nav.append(link1, link2, link3);
     //Add nav to container
-    container.append(logo, nav);
+    container.append(logo, nav, basketBtn);
     header.append(container);
     return header;
 }
 
-},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/navigationLink/navigationLink.js":"9DXZC","/src/js/components/logo/logo/":"3UqdW"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
+},{"/src/js/main":"1SICI","./header.css":"39x7f","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/navigationLink/navigationLink.js":"9DXZC","/src/js/components/logo/logo/":"3UqdW","/src/js/components/basketBtn/basketBtn/":"fnQNK"}],"39x7f":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -1289,6 +1291,29 @@ function getOrigin(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
+
+},{}],"fnQNK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getBasketBtn", ()=>getBasketBtn);
+var _main = require("/src/js/main");
+var _basketBtnCss = require("./basketBtn.css");
+var _basketSvg = require("bundle-text:/src/assets/img/basket.svg");
+var _basketSvgDefault = parcelHelpers.interopDefault(_basketSvg);
+function getBasketBtn() {
+    const basketBtn = document.createElement("a");
+    basketBtn.href = "/basket";
+    basketBtn.classList.add("basket-btn");
+    basketBtn.innerHTML = (0, _basketSvgDefault.default);
+    basketBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _main.router).navigate("/basket");
+    });
+    return basketBtn;
+}
+
+},{"./basketBtn.css":"c11TG","bundle-text:/src/assets/img/basket.svg":"6V9LR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/main":"1SICI"}],"c11TG":[function() {},{}],"6V9LR":[function(require,module,exports) {
+module.exports = "<svg fill=\"#f98800\" width=\"800px\" height=\"800px\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.132 2.504 4.42 9H3a1.001 1.001 0 0 0-.965 1.263l2.799 10.263A2.004 2.004 0 0 0 6.764 22h10.473c.898 0 1.692-.605 1.93-1.475l2.799-10.263A.998.998 0 0 0 21 9h-1.42l-3.712-6.496-1.736.992L17.277 9H6.723l3.145-5.504-1.736-.992zM14 13h2v5h-2v-5zm-6 0h2v5H8v-5z\"></path></svg>";
 
 },{}],"2aBBT":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

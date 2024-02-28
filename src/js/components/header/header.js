@@ -1,7 +1,7 @@
 import { router } from "/src/js/main";
 import { getNavigationLink } from '/src/js/components/navigationLink/navigationLink.js'
-
 import { getLogo } from '/src/js/components/logo/logo/'
+import { getBasketBtn } from '/src/js/components/basketBtn/basketBtn/'
 import "./header.css";
 
 // Create Header
@@ -16,6 +16,8 @@ export function getHeader() {
   const logo = getLogo()
   logo.classList.add('header__logo')
 
+  const basketBtn = getBasketBtn() 
+
   //Create navigation menu
   const nav = document.createElement("nav");
   nav.classList.add("header__navigation");
@@ -28,7 +30,7 @@ export function getHeader() {
   //Add links into nav menu
   nav.append(link1, link2, link3);
   //Add nav to container
-  container.append(logo, nav);
+  container.append(logo, nav, basketBtn);
   header.append(container);
   return header;
 }
