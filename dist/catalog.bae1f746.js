@@ -611,7 +611,7 @@ function getProductList() {
         const list = document.createElement("ul");
         list.classList.add("product-list__list");
         for (const product of data){
-            const productCard = (0, _productCardJs.getProductCard)();
+            const productCard = (0, _productCardJs.getProductCard)(product);
             list.append(productCard);
         }
         productsList.append(list);
@@ -629,27 +629,30 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
 var _main = require("/src/js/main");
 var _productCardCss = require("./productCard.css");
-function getProductCard(title, price) {
+function getProductCard(product) {
     const item = document.createElement("li");
     item.classList.add("product");
     const productTitle = document.createElement("h2");
     productTitle.classList.add("product__title");
+    const productPreview = document.createElement("img");
+    productPreview.classList.add("product__preview");
+    productPreview.src = product.preview;
     let ProductLink = document.createElement("a");
-    ProductLink.textContent = title;
+    ProductLink.textContent = product.title;
     ProductLink.href = "";
     ProductLink.addEventListener("click", function(event) {
         event.preventDefault();
-        (0, _main.router).navigate(`/product/${title}`);
+        (0, _main.router).navigate(`/product/${product.id}`);
     });
     productTitle.append(ProductLink);
     const Productprice = document.createElement("strong");
     Productprice.classList.add("product__price");
-    Productprice.textContent = `${price} $`;
+    Productprice.textContent = `${product.price} $`;
     //Butoon for addition good to a button
     const addBasket = document.createElement("button");
-    addBasket.classList.add("btn");
+    addBasket.classList.add("btn", "product__add-basket-btn");
     addBasket.textContent = "Add to basket";
-    item.append(productTitle, Productprice, addBasket);
+    item.append(productPreview, productTitle, Productprice, addBasket);
     return item;
 }
 

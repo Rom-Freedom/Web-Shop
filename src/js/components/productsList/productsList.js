@@ -13,7 +13,7 @@ export function getProductList() {
         const list = document.createElement('ul')
         list.classList.add('product-list__list')
         for (const product of data) {
-            const productCard =  getProductCard()
+            const productCard =  getProductCard(product)
             list.append(productCard)
         }
 

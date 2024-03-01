@@ -42,6 +42,7 @@ img {
   font-weight: 600;
   outline: 1px solid transparent;
   transition: all 0.5s ease;
+  border-radius: 15px;
 }
 .btn:hover {
   background-color: rgb(49, 86, 205);
@@ -60,25 +61,12 @@ img {
 }
 
 /* List of goods */
-/* .product-list {
+.product-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
 }
-.product-list__item {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gray;
-    padding: 20px;
-}
-.product-list__title {
-    font-size: 26px;
-    margin-bottom: 15px;
-}
-.product-list__price {
-    font-size: 20px;
-    margin-bottom: 15px;
-} */
+
 
 

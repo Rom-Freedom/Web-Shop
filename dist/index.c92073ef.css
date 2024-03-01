@@ -35,6 +35,7 @@ img {
 .btn {
   color: #454d54;
   background-color: #87ceeb;
+  border-radius: 15px;
   outline: 1px solid #0000;
   padding: 15px 30px;
   font-size: 20px;
@@ -58,6 +59,13 @@ img {
 .page {
   background-color: #198713;
   padding: 20px;
+}
+
+.product-list {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */
