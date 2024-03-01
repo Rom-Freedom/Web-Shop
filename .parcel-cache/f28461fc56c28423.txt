@@ -1,6 +1,6 @@
-4562
+4569
 101C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\package-manager\test\fixtures\has-foo\subpackage133533226634238061 1
-36C:\Users\romeo\Desktop\Web Shop\dist133535454362968588 1
+36C:\Users\romeo\Desktop\Web Shop\dist133537626501088985 1
 93C:\Users\romeo\Desktop\Web Shop\node_modules\css-select\lib\pseudo-selectors\filters.d.ts.map133533226296449217 0
 61C:\Users\romeo\Desktop\Web Shop\node_modules\term-size\vendor133533225941387138 1
 53C:\Users\romeo\Desktop\Web Shop\src\js\pages\order.js133535033434498647 0
@@ -9,7 +9,7 @@
 38C:\Users\romeo\Desktop\Web Shop\images133530665236971100 1
 90C:\Users\romeo\Desktop\Web Shop\node_modules\dom-serializer\node_modules\entities\lib\maps133533226186907565 1
 83C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\src\public\BundleGraph.js133533226641481093 0
-73C:\Users\romeo\Desktop\Web Shop\src\js\components\basketBtn\basketBtn.css133535467691821029 0
+73C:\Users\romeo\Desktop\Web Shop\src\js\components\basketBtn\basketBtn.css133535867633995630 0
 66C:\Users\romeo\Desktop\Web Shop\node_modules\error-ex\package.json133533225290887027 0
 35C:\Users\romeo\Desktop\Web Shop\src133535402643211398 1
 78C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\removeHiddenElems.js133533226642824100 0
@@ -20,7 +20,11 @@
 69C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\lib\svgo\plugins.js133533226560791898 0
 54C:\Users\romeo\Desktop\Web Shop\src\js\components\logo133535395400951547 1
 86C:\Users\romeo\Desktop\Web Shop\node_modules\node-gyp-build-optional-packages\index.js133533225865095974 0
-55C:\Users\romeo\Desktop\Web Shop\dist\index.0898f127.css133535454353506059 0
+58C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\data133533227061773493 1
+73C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\cleanupAttrs.js133533226134867229 0
+112C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\mdn-css-unicode-bidi-isolate-override.js133533227641828837 0
+78C:\Users\romeo\Desktop\Web Shop\src\js\components\productsList\productsList.js133537626473897695 0
+55C:\Users\romeo\Desktop\Web Shop\dist\index.0898f127.css133537626498259296 0
 44C:\Users\romeo\Desktop\Web Shop\package.json133535454261257329 0
 88C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\accelerometer.js133533225956806016 0
 75C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\scripts\errors.js133533227152453872 0
@@ -45,7 +49,7 @@
 49C:\Users\romeo\Desktop\Web Shop\package-lock.json133535454272448491 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\chrome-trace-event\package.json133533225494493430 0
 82C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\ch-unit.js133533226891627334 0
-46C:\Users\romeo\Desktop\Web Shop\src\js\main.js133535037024484418 0
+46C:\Users\romeo\Desktop\Web Shop\src\js\main.js133535865409634982 0
 79C:\Users\romeo\Desktop\Web Shop\node_modules\entities\lib\decode_codepoint.d.ts133533226356057716 0
 42C:\Users\romeo\Desktop\Web Shop\src\assets133535402844562415 1
 98C:\Users\romeo\Desktop\Web Shop\node_modules\posthtml\node_modules\posthtml-parser\dist\index.d.ts133533226054158395 0
@@ -78,7 +82,7 @@
 70C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-babel133533226366211842 1
 61C:\Users\romeo\Desktop\Web Shop\node_modules\stable\stable.js133533225882689434 0
 46C:\Users\romeo\Desktop\Web Shop\src\index.html133533246139394856 0
-49C:\Users\romeo\Desktop\Web Shop\src\js\components133535436327191901 1
+49C:\Users\romeo\Desktop\Web Shop\src\js\components133537610320394784 1
 75C:\Users\romeo\Desktop\Web Shop\node_modules\css-what\lib\commonjs\parse.js133533225941867061 0
 67C:\Users\romeo\Desktop\Web Shop\node_modules\supports-color\license133533225302338239 0
 62C:\Users\romeo\Desktop\Web Shop\src\js\components\desc\desc.js133535025644661211 0
@@ -86,8 +90,10 @@
 67C:\Users\romeo\Desktop\Web Shop\node_modules\callsites\package.json133533225296913996 0
 68C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\reporter-tracer133533225939086055 1
 54C:\Users\romeo\Desktop\Web Shop\src\js\pages\basket.js133535032751076657 0
+79C:\Users\romeo\Desktop\Web Shop\src\js\components\productsList\productsList.css133537601926373128 0
+83C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-html\src\inline.js133533226072500648 0
 70C:\Users\romeo\Desktop\Web Shop\node_modules\semver\functions\patch.js133533226532359735 0
-55C:\Users\romeo\Desktop\Web Shop\src\js\pages\catalog.js133535033260029351 0
+55C:\Users\romeo\Desktop\Web Shop\src\js\pages\catalog.js133537625061168401 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\GY.js133533227544137174 0
 65C:\Users\romeo\Desktop\Web Shop\node_modules\htmlnano\index.d.mts133533226979113821 0
 54C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\dist133533226716463874 1
@@ -95,6 +101,9 @@
 81C:\Users\romeo\Desktop\Web Shop\node_modules\htmlnano\lib\modules\mergeStyles.mjs133533226883513913 0
 74C:\Users\romeo\Desktop\Web Shop\node_modules\update-browserslist-db\cli.js133533225757229769 0
 52C:\Users\romeo\Desktop\Web Shop\src\js\pages\main.js133535040864616312 0
+62C:\Users\romeo\Desktop\Web Shop\src\js\components\productsList133537601574894591 1
+70C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\reporter-cli\test133533226296419707 1
+96C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_stat.1133533226552813915 0
 56C:\Users\romeo\Desktop\Web Shop\src\js\pages\notFound.js133535034300123361 0
 91C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\multibackgrounds.js133533227664022709 0
 87C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\utils\test\input\config\empty.toml133533227011807135 0
@@ -140,7 +149,7 @@
 78C:\Users\romeo\Desktop\Web Shop\node_modules\htmlnano\lib\modules\minifyJs.mjs133533226891540781 0
 98C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\font-variant-alternates.js133533227532523700 0
 57C:\Users\romeo\Desktop\Web Shop\node_modules\import-fresh133533225927885732 1
-83C:\Users\romeo\Desktop\Web Shop\src\js\components\navigationLink\navigationLink.css133535390366487501 0
+83C:\Users\romeo\Desktop\Web Shop\src\js\components\navigationLink\navigationLink.css133535868465757137 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_to_property_key.js133533227116828734 0
 73C:\Users\romeo\Desktop\Web Shop\node_modules\type-fest\source\except.d.ts133533226256116010 0
 78C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\src\_ts_decorate.mjs133533227646771607 0
@@ -189,7 +198,7 @@
 89C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-exclusions.js133533227086823884 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\GL.js133533227541625527 0
 75C:\Users\romeo\Desktop\Web Shop\node_modules\cli-progress\lib\single-bar.js133533226208057014 0
-62C:\Users\romeo\Desktop\Web Shop\src\js\components\logo\logo.js133535424834904411 0
+62C:\Users\romeo\Desktop\Web Shop\src\js\components\logo\logo.js133535854264608105 0
 86C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\multicolumn.js133533227664323238 0
 93C:\Users\romeo\Desktop\Web Shop\node_modules\@babel\highlight\node_modules\color-name\LICENSE133533225893330997 0
 84C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_instanceof\package.json133533227488306706 0
@@ -200,7 +209,7 @@
 77C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\_applyTransforms.js133533225834108002 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\run-in.js133533227711922073 0
 112C:\Users\romeo\Desktop\Web Shop\node_modules\node-gyp-build-optional-packages\node_modules\detect-libc\README.md133533226031011698 0
-66C:\Users\romeo\Desktop\Web Shop\src\js\components\header\header.js133535454116611246 0
+66C:\Users\romeo\Desktop\Web Shop\src\js\components\header\header.js133535860218791967 0
 68C:\Users\romeo\Desktop\Web Shop\node_modules\semver\functions\inc.js133533226306423016 0
 85C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\runtime-browser-hmr\package.json133533226142962858 0
 83C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lz4\lib\liblz4.pc.in133533227064859844 0
@@ -209,7 +218,7 @@
 73C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\lexer\search.js133533227002794712 0
 94C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\core\bindings\binding_core_wasm\package.json133533226124348103 0
 75C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\lib\serializer.js133533227091940713 0
-72C:\Users\romeo\Desktop\Web Shop\src\js\components\basketBtn\basketBtn.js133535466414551882 0
+72C:\Users\romeo\Desktop\Web Shop\src\js\components\basketBtn\basketBtn.js133535842248632743 0
 61C:\Users\romeo\Desktop\Web Shop\node_modules\tslib\tslib.d.ts133533226186363168 0
 59C:\Users\romeo\Desktop\Web Shop\node_modules\source-map\lib133533226222818214 1
 55C:\Users\romeo\Desktop\Web Shop\node_modules\ansi-regex133533225921781332 1
@@ -221,7 +230,7 @@
 98C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\intersectionobserver-v2.js133533227592520035 0
 98C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-backgroundblendmode.js133533227043886175 0
 65C:\Users\romeo\Desktop\Web Shop\node_modules\stable\stable.min.js133533225938441191 0
-59C:\Users\romeo\Desktop\Web Shop\dist\basket.690031ab.js.map133535454362238476 0
+59C:\Users\romeo\Desktop\Web Shop\dist\basket.690031ab.js.map133537626500368910 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SI.js133533227725953381 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\semver\ranges\max-satisfying.js133533226378037875 0
 55C:\Users\romeo\Desktop\Web Shop\src\assets\img\logo.svg133364046760000000 0
@@ -430,9 +439,9 @@
 52C:\Users\romeo\Desktop\Web Shop\node_modules\is-glob133533225863456797 1
 52C:\Users\romeo\Desktop\Web Shop\node_modules\is-json133533225975407996 1
 98C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\rust\parcel-node-bindings.linux-x64-musl.node133533227420847951 0
-83C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\node_modules\node-addon-api\tools133533226415411088 1
 87C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\src\_wrap_async_generator.mjs133533227660451145 0
 54C:\Users\romeo\Desktop\Web Shop\node_modules\json5\lib133533226354791845 1
+83C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\node_modules\node-addon-api\tools133533226415411088 1
 74C:\Users\romeo\Desktop\Web Shop\node_modules\entities\lib\encode-trie.d.ts133533226412778949 0
 77C:\Users\romeo\Desktop\Web Shop\node_modules\postcss-value-parser\lib\walk.js133533225991081825 0
 54C:\Users\romeo\Desktop\Web Shop\node_modules\is-number133533225841130774 1
@@ -671,7 +680,7 @@
 77C:\Users\romeo\Desktop\Web Shop\node_modules\regenerator-runtime\package.json133533225893320985 0
 75C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\graph\test\integration133533225708257787 1
 74C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\convertColors.js133533226318798413 0
-53C:\Users\romeo\Desktop\Web Shop\dist\main.00ff3c8c.js133535454359625585 0
+53C:\Users\romeo\Desktop\Web Shop\dist\main.00ff3c8c.js133537626498259296 0
 96C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.c133533226645261823 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SA.js133533227712256409 0
 83C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\lib\public\BundleGraph.js133533226612503784 0
@@ -970,8 +979,8 @@
 76C:\Users\romeo\Desktop\Web Shop\node_modules\cosmiconfig\dist\types.d.ts.map133533226321495521 0
 95C:\Users\romeo\Desktop\Web Shop\node_modules\htmlnano\lib\modules\removeRedundantAttributes.cjs133533226418086235 0
 115C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\test\fixtures\invalid-target-source-not-file\src\index.js133533226873195751 0
-68C:\Users\romeo\Desktop\Web Shop\node_modules\posthtml-render\license133533225264363408 0
 84C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\cleanupEnableBackground.js133533226156433934 0
+68C:\Users\romeo\Desktop\Web Shop\node_modules\posthtml-render\license133533225264363408 0
 63C:\Users\romeo\Desktop\Web Shop\node_modules\tslib\tslib.es6.js133533225919933743 0
 92C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-text-box-trim.js133533227344507286 0
 87C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\font-kerning.js133533227527896283 0
@@ -1064,8 +1073,6 @@
 64C:\Users\romeo\Desktop\Web Shop\node_modules\callsites\readme.md133533225938841293 0
 70C:\Users\romeo\Desktop\Web Shop\node_modules\csso\lib\replace\property133533226531711263 1
 83C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\addClassesToSVGElement.js133533226109969073 0
-58C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\data133533227061773493 1
-73C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\cleanupAttrs.js133533226134867229 0
 80C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\cleanupListOfValues.js133533226187793809 0
 75C:\Users\romeo\Desktop\Web Shop\node_modules\svgo\plugins\collapseGroups.js133533226275455000 0
 68C:\Users\romeo\Desktop\Web Shop\node_modules\node-addon-api\index.js133533226307432014 0
@@ -1372,7 +1379,7 @@
 83C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\cjs\_set_prototype_of.cjs133533226705845122 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\VA.js133533227779098035 0
 68C:\Users\romeo\Desktop\Web Shop\node_modules\semver\functions\cmp.js133533225893370861 0
-55C:\Users\romeo\Desktop\Web Shop\dist\index.c92073ef.css133535454355166057 0
+55C:\Users\romeo\Desktop\Web Shop\dist\index.c92073ef.css133537626498259296 0
 89C:\Users\romeo\Desktop\Web Shop\node_modules\@babel\highlight\node_modules\chalk\index.js133533225517304451 0
 107C:\Users\romeo\Desktop\Web Shop\node_modules\abortcontroller-polyfill\dist\abortcontroller-polyfill-only.js133533225846924494 0
 67C:\Users\romeo\Desktop\Web Shop\node_modules\semver\functions\eq.js133533226189698520 0
@@ -1501,7 +1508,7 @@
 88C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_possible_constructor_return133533227529520676 1
 81C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\canvas.js133533226879784097 0
 69C:\Users\romeo\Desktop\Web Shop\node_modules\picocolors\picocolors.js133533225738854560 0
-60C:\Users\romeo\Desktop\Web Shop\dist\catalog.bae1f746.js.map133535454362218554 0
+60C:\Users\romeo\Desktop\Web Shop\dist\catalog.bae1f746.js.map133537626500368910 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\lib\loadParcelPlugin.js133533226949696986 0
 77C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\graph\test\Graph.test.js133533226320772298 0
 67C:\Users\romeo\Desktop\Web Shop\node_modules\msgpackr\node-index.js133533226302081022 0
@@ -1654,7 +1661,7 @@
 66C:\Users\romeo\Desktop\Web Shop\node_modules\node-releases\LICENSE133533225309673597 0
 80C:\Users\romeo\Desktop\Web Shop\node_modules\node-releases\data\release-schedule133533225952040361 1
 81C:\Users\romeo\Desktop\Web Shop\node_modules\cosmiconfig\dist\ExplorerSync.js.map133533226254702422 0
-61C:\Users\romeo\Desktop\Web Shop\dist\notFound.4f16eca9.js.map133535454362278140 0
+61C:\Users\romeo\Desktop\Web Shop\dist\notFound.4f16eca9.js.map133537626500399324 0
 122C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\test\fixtures\plugins\node_modules\parcel-transformer-no-engines133533227364151035 1
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\TZ.js133533227772028765 0
 64C:\Users\romeo\Desktop\Web Shop\node_modules\msgpackr\pack.d.cts133533226091389058 0
@@ -1981,7 +1988,7 @@
 83C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\download.js133533227479094459 0
 68C:\Users\romeo\Desktop\Web Shop\node_modules\css-select\lib\types.js133533226186887687 0
 95C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.c133533226556131965 0
-54C:\Users\romeo\Desktop\Web Shop\dist\logo.e1e57082.svg133535454359636042 0
+54C:\Users\romeo\Desktop\Web Shop\dist\logo.e1e57082.svg133537626498248843 0
 83C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\syntax\node\Identifier.js133533226677639872 0
 95C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.h133533227030472813 0
 95C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\COPYRIGHT133533225991345302 0
@@ -1997,8 +2004,6 @@
 100C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\runtime-js\lib\helpers\browser\esm-js-loader.js133533226280534464 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\syntax\node\Raw.js133533227001814709 0
 96C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_load.c133533226651496697 0
-70C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\reporter-cli\test133533226296419707 1
-96C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_stat.1133533226552813915 0
 99C:\Users\romeo\Desktop\Web Shop\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl-sparse.c133533226704658926 0
 69C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\data\patch.json133533227063729606 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\DJ.js133533227469648015 0
@@ -2457,7 +2462,7 @@
 64C:\Users\romeo\Desktop\Web Shop\node_modules\emoji-regex\text.js133533225971638692 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\KE.js133533227605932131 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_dispose\package.json133533227462186010 0
-55C:\Users\romeo\Desktop\Web Shop\dist\basket.690031ab.js133535454359625585 0
+55C:\Users\romeo\Desktop\Web Shop\dist\basket.690031ab.js133537626498269318 0
 72C:\Users\romeo\Desktop\Web Shop\node_modules\emoji-regex\es2015\index.js133533226024734115 0
 71C:\Users\romeo\Desktop\Web Shop\node_modules\emoji-regex\es2015\text.js133533226073401553 0
 89C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\resizeobserver.js133533227709530428 0
@@ -2606,7 +2611,7 @@
 60C:\Users\romeo\Desktop\Web Shop\node_modules\detect-libc\lib133533225980358828 1
 79C:\Users\romeo\Desktop\Web Shop\node_modules\css-what\lib\es\stringify.d.ts.map133533226273970469 0
 69C:\Users\romeo\Desktop\Web Shop\node_modules\detect-libc\package.json133533225264460399 0
-60C:\Users\romeo\Desktop\Web Shop\dist\product.32ff8da9.js.map133535454362238476 0
+60C:\Users\romeo\Desktop\Web Shop\dist\product.32ff8da9.js.map133537626500379329 0
 66C:\Users\romeo\Desktop\Web Shop\node_modules\detect-libc\README.md133533225721749802 0
 75C:\Users\romeo\Desktop\Web Shop\node_modules\detect-libc\lib\detect-libc.js133533225987721408 0
 62C:\Users\romeo\Desktop\Web Shop\node_modules\csso\CHANGELOG.md133533226646132368 0
@@ -2663,7 +2668,7 @@
 63C:\Users\romeo\Desktop\Web Shop\node_modules\boolbase\README.md133533225468987512 0
 77C:\Users\romeo\Desktop\Web Shop\node_modules\css-what\lib\commonjs\index.d.ts133533226326666969 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\css-what\lib\commonjs\parse.d.ts.map133533226201858181 0
-56C:\Users\romeo\Desktop\Web Shop\dist\product.32ff8da9.js133535454359625585 0
+56C:\Users\romeo\Desktop\Web Shop\dist\product.32ff8da9.js133537626498279311 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\LR.js133533227633792299 0
 85C:\Users\romeo\Desktop\Web Shop\node_modules\css-what\lib\commonjs\stringify.d.ts.map133533226261334450 0
 90C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\payment-request.js133533227692973891 0
@@ -2759,10 +2764,8 @@
 80C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\syntax\config\lexer.js133533226848443729 0
 78C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\sni.js133533227729781265 0
 78C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\syntax\config\mix.js133533226878649772 0
-85C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_async_generator_delegate133533227236374833 1
-76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SN.js133533227729188232 0
 102C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\cjs\_class_static_private_field_spec_get.cjs133533226533371197 0
-59C:\Users\romeo\Desktop\Web Shop\dist\index.c92073ef.css.map133535454356496026 0
+59C:\Users\romeo\Desktop\Web Shop\dist\index.c92073ef.css.map133537626500359030 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\syntax\config\parser.js133533226977524555 0
 81C:\Users\romeo\Desktop\Web Shop\node_modules\css-tree\lib\syntax\config\walker.js133533227057376944 0
 89C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_iterable_to_array_limit.js133533227081187180 0
@@ -3010,6 +3013,8 @@
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SG.js133533227721293810 0
 99C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_class_private_method_init\package.json133533227407286631 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SH.js133533227721359527 0
+85C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_async_generator_delegate133533227236374833 1
+76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SN.js133533227729188232 0
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SO.js133533227730496084 0
 82C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\runtime-js\src\helpers\worker133533226596601659 1
 76C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\regions\SR.js133533227733932973 0
@@ -3155,8 +3160,8 @@
 93C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-featurequeries.js133533227087505151 0
 87C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-image\src\loadSharp.js133533225975418444 0
 91C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_class_extract_field_descriptor133533227343659005 1
-94C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-filter-function.js133533227090585283 0
 101C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\test\fixtures\invalid-target-source-missing133533227295041703 1
+94C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-filter-function.js133533227090585283 0
 86C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-filters.js133533227091670225 0
 91C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-first-letter.js133533227092064886 0
 89C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\css-first-line.js133533227092847900 0
@@ -3273,7 +3278,7 @@
 70C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\src\types.js133533227120073999 0
 93C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\cjs\_object_destructuring_empty.cjs133533226686414622 0
 87C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\do-not-track.js133533227472794646 0
-57C:\Users\romeo\Desktop\Web Shop\dist\notFound.4f16eca9.js133535454359636042 0
+57C:\Users\romeo\Desktop\Web Shop\dist\notFound.4f16eca9.js133537626498279311 0
 83C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\events\test\Disposable.test.js133533225946869324 0
 95C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\document-execcommand.js133533227475505447 0
 100C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\document-scrollingelement.js133533227476876556 0
@@ -3406,7 +3411,6 @@
 80C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\utils\test\throttle.test.js133533226871351642 0
 74C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\workers\src\Handle.js133533226333286457 0
 106C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\mdn-css-backdrop-pseudo-element.js133533227641224453 0
-112C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\mdn-css-unicode-bidi-isolate-override.js133533227641828837 0
 103C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\mdn-css-unicode-bidi-isolate.js133533227641898851 0
 100C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\mdn-text-decoration-color.js133533227642382577 0
 84C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_async_to_generator.js133533226942292631 0
@@ -3443,7 +3447,7 @@
 85C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\ogg-vorbis.js133533227678298481 0
 78C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\ogv.js133533227679745328 0
 94C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\once-event-listener.js133533227682418759 0
-56C:\Users\romeo\Desktop\Web Shop\dist\catalog.bae1f746.js133535454359596061 0
+56C:\Users\romeo\Desktop\Web Shop\dist\catalog.bae1f746.js133537626498269318 0
 79C:\Users\romeo\Desktop\Web Shop\node_modules\caniuse-lite\data\features\opus.js133533227683229298 0
 92C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_object_without_properties_loose133533227525099477 1
 82C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\_\_ts_param\package.json133533227564760642 0
@@ -3836,6 +3840,7 @@
 76C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\core\lib\projectPath.js133533227071040740 0
 92C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_class_private_field_update.js133533227028133924 0
 90C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_class_private_method_get.js133533227030512476 0
+61C:\Users\romeo\Desktop\Web Shop\dist\catalog.acd7de4f.css.map133537626500368910 0
 91C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_class_private_method_init.js133533227035389134 0
 66C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\optimizer-css133533225938751646 1
 104C:\Users\romeo\Desktop\Web Shop\node_modules\@swc\helpers\esm\_class_static_private_field_destructure.js133533227036707926 0
@@ -3971,7 +3976,7 @@
 83C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-react-refresh-wrap133533226099077859 1
 68C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-svg133533226126272111 1
 58C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\types133533225991042342 1
-58C:\Users\romeo\Desktop\Web Shop\dist\order.16121d68.js.map133535454362288382 0
+58C:\Users\romeo\Desktop\Web Shop\dist\order.16121d68.js.map133537626500388847 0
 58C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\utils133533226884447911 1
 70C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\watcher-win32-x64133533225841081132 1
 68C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\workers\LICENSE133533225305618156 0
@@ -4084,7 +4089,6 @@
 74C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-image\src133533226045716974 1
 94C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-image\src\ImageTransformer.js133533225896940019 0
 92C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-html\src\HTMLTransformer.js133533225976176276 0
-83C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-html\src\inline.js133533226072500648 0
 84C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-css\wasm-wrapper.js133533225967696037 0
 90C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-css\lib\CSSTransformer.js133533225811246097 0
 74C:\Users\romeo\Desktop\Web Shop\node_modules\@parcel\transformer-babel\lib133533226333236927 1
@@ -4550,14 +4554,17 @@
 76C:\Users\romeo\Desktop\Web Shop\node_modules\.bin\update-browserslist-db.ps1133533227816936730 0
 70C:\Users\romeo\Desktop\Web Shop\dist\basket.690031ab.js.map.116956.1iu133535027254197627 0
 56C:\Users\romeo\Desktop\Web Shop\dist\basket.f4c009d0.css133535027250637669 0
-59C:\Users\romeo\Desktop\Web Shop\dist\index.0898f127.css.map133535454356446071 0
-54C:\Users\romeo\Desktop\Web Shop\dist\index.18dbc454.js133535454362148149 0
-58C:\Users\romeo\Desktop\Web Shop\dist\index.18dbc454.js.map133535454362928479 0
-47C:\Users\romeo\Desktop\Web Shop\dist\index.html133535060787294186 0
-57C:\Users\romeo\Desktop\Web Shop\dist\main.00ff3c8c.js.map133535454362208566 0
-54C:\Users\romeo\Desktop\Web Shop\dist\main.e1fccb57.css133535454356175603 0
-58C:\Users\romeo\Desktop\Web Shop\dist\main.e1fccb57.css.map133535454356496026 0
+57C:\Users\romeo\Desktop\Web Shop\dist\catalog.419662c8.css133537615447002527 0
+61C:\Users\romeo\Desktop\Web Shop\dist\catalog.419662c8.css.map133537615449106378 0
+57C:\Users\romeo\Desktop\Web Shop\dist\catalog.acd7de4f.css133537626498269318 0
+59C:\Users\romeo\Desktop\Web Shop\dist\index.0898f127.css.map133537626500359030 0
+54C:\Users\romeo\Desktop\Web Shop\dist\index.18dbc454.js133537626498259296 0
+58C:\Users\romeo\Desktop\Web Shop\dist\index.18dbc454.js.map133537626500359030 0
+47C:\Users\romeo\Desktop\Web Shop\dist\index.html133537626498248843 0
+57C:\Users\romeo\Desktop\Web Shop\dist\main.00ff3c8c.js.map133537626500359030 0
+54C:\Users\romeo\Desktop\Web Shop\dist\main.e1fccb57.css133537626498259296 0
+58C:\Users\romeo\Desktop\Web Shop\dist\main.e1fccb57.css.map133537626500359030 0
 72C:\Users\romeo\Desktop\Web Shop\dist\notFound.4f16eca9.js.map.116956.1iw133535027254837641 0
-54C:\Users\romeo\Desktop\Web Shop\dist\order.16121d68.js133535454359625585 0
+54C:\Users\romeo\Desktop\Web Shop\dist\order.16121d68.js133537626498279311 0
 69C:\Users\romeo\Desktop\Web Shop\dist\order.16121d68.js.map.116956.1it133535027254187653 0
 71C:\Users\romeo\Desktop\Web Shop\dist\product.32ff8da9.js.map.116956.1is133535027254137611 0

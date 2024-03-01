@@ -584,16 +584,36 @@ parcelHelpers.defineInteropFlag(exports);
 //Catalog
 parcelHelpers.export(exports, "getCatalogPage", ()=>getCatalogPage);
 var _mainTitleJs = require("/src/js/components/mainTitle/mainTitle.js");
-var _descJs = require("/src/js/components/desc/desc.js");
+var _productsListJs = require("/src/js/components/productsList/productsList.js");
 function getCatalogPage() {
     const page = document.createElement("div");
-    page.classList.add("page", "catalog-page", "container");
+    page.classList.add("page", "catalog-page");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("Catalog");
-    const desc = (0, _descJs.getDesc)("The page is under construction");
-    page.append(mainTitle, desc);
+    const product = (0, _productsListJs.getProductList)();
+    product.getProducts();
+    page.append(mainTitle, product.productsList);
     return page;
 }
 
-},{"/src/js/components/desc/desc.js":"2aBBT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if"}]},["kZblT"], null, "parcelRequiref824")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productsList/productsList.js":"aAtZQ"}],"aAtZQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Product list component
+parcelHelpers.export(exports, "getProductList", ()=>getProductList);
+var _productsListCss = require("./productsList.css");
+function getProductList() {
+    const productsList = document.createElement("div");
+    productsList.classList.add("product-list");
+    const getProducts = async function(URI) {
+        const response = await fetch("https://shop-frontent.ru/wp-json/wp/v1/products");
+        console.log(response);
+    };
+    return {
+        productsList,
+        getProducts
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productsList.css":"dMm9t"}],"dMm9t":[function() {},{}]},["kZblT"], null, "parcelRequiref824")
 
 //# sourceMappingURL=catalog.bae1f746.js.map

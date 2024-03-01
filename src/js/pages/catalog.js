@@ -1,14 +1,16 @@
 import { getMainTitle} from '/src/js/components/mainTitle/mainTitle.js'
-import { getDesc } from '/src/js/components/desc/desc.js'
+import { getProductList } from '/src/js/components/productsList/productsList.js'
 
 //Catalog
 export function getCatalogPage() {
     const page = document.createElement('div')
-    page.classList.add('page', 'catalog-page', 'container')
+    page.classList.add('page', 'catalog-page')
 
     const mainTitle = getMainTitle('Catalog')
-    const desc = getDesc('The page is under construction')
+    
+    const product = getProductList()
+    product.getProducts()
 
-    page.append(mainTitle, desc)
+    page.append(mainTitle, product.productsList)
     return page
 }
