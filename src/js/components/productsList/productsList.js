@@ -1,4 +1,5 @@
 import './productsList.css'
+import { getProductCard } from '/src/js/components/productCard/productCard.js'
 //Product list component
 export function getProductList() {
     const productsList = document.createElement('div')
@@ -6,7 +7,17 @@ export function getProductList() {
 
     const getProducts = async function (URI) {
         const response = await fetch('https://shop-frontent.ru/wp-json/wp/v1/products')
-        console.log(response);
+
+        const data = await response.json()
+
+        const list = document.createElement('ul')
+        list.classList.add('product-list__list')
+        for (const product of data) {
+            const productCard =  getProductCard()
+            list.append(productCard)
+        }
+
+        productsList.append(list)
     }
 
     return {

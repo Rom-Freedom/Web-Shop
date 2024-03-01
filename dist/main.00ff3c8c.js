@@ -589,11 +589,7 @@ function getMainPage() {
     const page = document.createElement("div");
     page.classList.add("page", "main-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("Main Page");
-    const list = document.createElement("ul");
-    list.classList.add("product-list");
-    //Create three cards
-    list.append((0, _productCardJs.getProductCard)("Good_1", 400), (0, _productCardJs.getProductCard)("Good_2", 600), (0, _productCardJs.getProductCard)("Good_3", 750));
-    page.append(mainTitle, list);
+    page.append(mainTitle);
     return page;
 }
 
@@ -606,9 +602,9 @@ var _main = require("/src/js/main");
 var _productCardCss = require("./productCard.css");
 function getProductCard(title, price) {
     const item = document.createElement("li");
-    item.classList.add("product-list__item");
+    item.classList.add("product");
     const productTitle = document.createElement("h2");
-    productTitle.classList.add("product-list__title");
+    productTitle.classList.add("product__title");
     let ProductLink = document.createElement("a");
     ProductLink.textContent = title;
     ProductLink.href = "";
@@ -618,7 +614,7 @@ function getProductCard(title, price) {
     });
     productTitle.append(ProductLink);
     const Productprice = document.createElement("strong");
-    Productprice.classList.add("product-list__price");
+    Productprice.classList.add("product__price");
     Productprice.textContent = `${price} $`;
     //Butoon for addition good to a button
     const addBasket = document.createElement("button");

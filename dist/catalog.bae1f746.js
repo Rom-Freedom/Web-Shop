@@ -601,12 +601,20 @@ parcelHelpers.defineInteropFlag(exports);
 //Product list component
 parcelHelpers.export(exports, "getProductList", ()=>getProductList);
 var _productsListCss = require("./productsList.css");
+var _productCardJs = require("/src/js/components/productCard/productCard.js");
 function getProductList() {
     const productsList = document.createElement("div");
     productsList.classList.add("product-list");
     const getProducts = async function(URI) {
         const response = await fetch("https://shop-frontent.ru/wp-json/wp/v1/products");
-        console.log(response);
+        const data = await response.json();
+        const list = document.createElement("ul");
+        list.classList.add("product-list__list");
+        for (const product of data){
+            const productCard = (0, _productCardJs.getProductCard)();
+            list.append(productCard);
+        }
+        productsList.append(list);
     };
     return {
         productsList,
@@ -614,6 +622,37 @@ function getProductList() {
     };
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productsList.css":"dMm9t"}],"dMm9t":[function() {},{}]},["kZblT"], null, "parcelRequiref824")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productsList.css":"dMm9t","/src/js/components/productCard/productCard.js":"9WzTu"}],"dMm9t":[function() {},{}],"9WzTu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Product Cards
+parcelHelpers.export(exports, "getProductCard", ()=>getProductCard);
+var _main = require("/src/js/main");
+var _productCardCss = require("./productCard.css");
+function getProductCard(title, price) {
+    const item = document.createElement("li");
+    item.classList.add("product");
+    const productTitle = document.createElement("h2");
+    productTitle.classList.add("product__title");
+    let ProductLink = document.createElement("a");
+    ProductLink.textContent = title;
+    ProductLink.href = "";
+    ProductLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        (0, _main.router).navigate(`/product/${title}`);
+    });
+    productTitle.append(ProductLink);
+    const Productprice = document.createElement("strong");
+    Productprice.classList.add("product__price");
+    Productprice.textContent = `${price} $`;
+    //Butoon for addition good to a button
+    const addBasket = document.createElement("button");
+    addBasket.classList.add("btn");
+    addBasket.textContent = "Add to basket";
+    item.append(productTitle, Productprice, addBasket);
+    return item;
+}
+
+},{"/src/js/main":"1SICI","./productCard.css":"8FtH3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8FtH3":[function() {},{}]},["kZblT"], null, "parcelRequiref824")
 
 //# sourceMappingURL=catalog.bae1f746.js.map

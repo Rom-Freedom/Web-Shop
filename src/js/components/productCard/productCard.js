@@ -4,10 +4,10 @@ import './productCard.css'
 //Product Cards
 export function getProductCard(title, price) {
     const item = document.createElement('li')
-    item.classList.add('product-list__item')
+    item.classList.add('product')
 
     const productTitle = document.createElement('h2')
-    productTitle.classList.add('product-list__title')
+    productTitle.classList.add('product__title')
 
     let ProductLink = document.createElement('a')
     ProductLink.textContent = title
@@ -21,7 +21,7 @@ export function getProductCard(title, price) {
     productTitle.append(ProductLink)
 
     const Productprice = document.createElement('strong')
-    Productprice.classList.add('product-list__price')
+    Productprice.classList.add('product__price')
     Productprice.textContent = `${price} $`
 
     //Butoon for addition good to a button

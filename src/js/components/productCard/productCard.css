@@ -1,21 +1,19 @@
 /* List of goods */
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-}
-.product-list__item {
+.product {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap;
+    align-items: center; */
+    gap: 20px;
     border: 1px solid gray;
     padding: 20px;
 }
-.product-list__title {
+
+.product__title {
     font-size: 26px;
     margin-bottom: 15px;
 }
-.product-list__price {
+.product__price {
     font-size: 20px;
     margin-bottom: 15px;
 }
