@@ -1,5 +1,6 @@
 import { getMainTitle} from '/src/js/components/mainTitle/mainTitle.js'
 import { getProductList } from '/src/js/components/productsList/productsList.js'
+import { URL } from '/src/js/config.js'
 
 
 //Catalog
@@ -10,7 +11,7 @@ export function getCatalogPage() {
     const mainTitle = getMainTitle('Catalog')
     
     const product = getProductList()
-    product.getProducts()
+    product.getProducts(`${URL}/wp-json/wp/v1/products`)
 
     page.append(mainTitle, product.productsList)
     return page

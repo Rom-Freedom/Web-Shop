@@ -7,4 +7,12 @@
   display: grid;
 }
 
+.products-list__msg {
+  text-align: center;
+  color: gray;
+  width: 100%;
+  padding: 20px 0;
+  display: block;
+}
+
 /*# sourceMappingURL=catalog.acd7de4f.css.map */

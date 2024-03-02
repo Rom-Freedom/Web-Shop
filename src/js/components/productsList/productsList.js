@@ -6,18 +6,31 @@ export function getProductList() {
     productsList.classList.add('product-list')
 
     const getProducts = async function (URI) {
-        const response = await fetch('https://shop-frontent.ru/wp-json/wp/v1/products')
 
-        const data = await response.json()
+        try {
+            const response = await fetch(URI)
+            if (response.status === 404) {
+                throw new Error('Goods are not found!')
+            }
 
-        const list = document.createElement('ul')
-        list.classList.add('product-list__list')
-        for (const product of data) {
-            const productCard =  getProductCard(product)
-            list.append(productCard)
+            const data = await response.json()
+
+            const list = document.createElement('ul')
+            list.classList.add('product-list__list')
+            for (const product of data) {
+                const productCard =  getProductCard(product)
+                list.append(productCard)
+            }
+
+            productsList.append(list)
+
+        } catch (error) {
+            const msg = document.createElement('span')
+            msg.classList.add('products-list__msg')
+            msg.textContent = error.message
+            productsList.append(msg)
         }
-
-        productsList.append(list)
+    
     }
 
     return {

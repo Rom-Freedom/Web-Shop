@@ -585,17 +585,18 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getCatalogPage", ()=>getCatalogPage);
 var _mainTitleJs = require("/src/js/components/mainTitle/mainTitle.js");
 var _productsListJs = require("/src/js/components/productsList/productsList.js");
+var _configJs = require("/src/js/config.js");
 function getCatalogPage() {
     const page = document.createElement("div");
     page.classList.add("page", "catalog-page");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("Catalog");
     const product = (0, _productsListJs.getProductList)();
-    product.getProducts();
+    product.getProducts(`${(0, _configJs.URL)}/wp-json/wp/v1/products`);
     page.append(mainTitle, product.productsList);
     return page;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productsList/productsList.js":"aAtZQ"}],"aAtZQ":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productsList/productsList.js":"aAtZQ","/src/js/config.js":"k5Hzs"}],"aAtZQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Product list component
@@ -606,15 +607,23 @@ function getProductList() {
     const productsList = document.createElement("div");
     productsList.classList.add("product-list");
     const getProducts = async function(URI) {
-        const response = await fetch("https://shop-frontent.ru/wp-json/wp/v1/products");
-        const data = await response.json();
-        const list = document.createElement("ul");
-        list.classList.add("product-list__list");
-        for (const product of data){
-            const productCard = (0, _productCardJs.getProductCard)(product);
-            list.append(productCard);
+        try {
+            const response = await fetch(URI);
+            if (response.status === 404) throw new Error("Goods are not found!");
+            const data = await response.json();
+            const list = document.createElement("ul");
+            list.classList.add("product-list__list");
+            for (const product of data){
+                const productCard = (0, _productCardJs.getProductCard)(product);
+                list.append(productCard);
+            }
+            productsList.append(list);
+        } catch (error) {
+            const msg = document.createElement("span");
+            msg.classList.add("products-list__msg");
+            msg.textContent = error.message;
+            productsList.append(msg);
         }
-        productsList.append(list);
     };
     return {
         productsList,
@@ -656,6 +665,12 @@ function getProductCard(product) {
     return item;
 }
 
-},{"/src/js/main":"1SICI","./productCard.css":"8FtH3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8FtH3":[function() {},{}]},["kZblT"], null, "parcelRequiref824")
+},{"/src/js/main":"1SICI","./productCard.css":"8FtH3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8FtH3":[function() {},{}],"k5Hzs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "URL", ()=>URL);
+const URL = "https://shop-frontent.ru";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["kZblT"], null, "parcelRequiref824")
 
 //# sourceMappingURL=catalog.bae1f746.js.map
