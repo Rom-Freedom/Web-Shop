@@ -584,16 +584,54 @@ parcelHelpers.defineInteropFlag(exports);
 //Main Page
 parcelHelpers.export(exports, "getMainPage", ()=>getMainPage);
 var _mainTitleJs = require("/src/js/components/mainTitle/mainTitle.js");
-var _productCardJs = require("/src/js/components/productCard/productCard.js");
+var _productsListJs = require("/src/js/components/productsList/productsList.js");
+var _configJs = require("/src/js/config.js");
 function getMainPage() {
     const page = document.createElement("div");
     page.classList.add("page", "main-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("Main Page");
-    page.append(mainTitle);
+    const product = (0, _productsListJs.getProductList)();
+    product.getProducts(`${(0, _configJs.URL)}/wp-json/wp/v1/products`);
+    page.append(mainTitle, product.productsList);
     return page;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productCard/productCard.js":"9WzTu"}],"9WzTu":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/src/js/components/mainTitle/mainTitle.js":"ki5if","/src/js/components/productsList/productsList.js":"aAtZQ","/src/js/config.js":"k5Hzs"}],"aAtZQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//Product list component
+parcelHelpers.export(exports, "getProductList", ()=>getProductList);
+var _productsListCss = require("./productsList.css");
+var _productCardJs = require("/src/js/components/productCard/productCard.js");
+function getProductList() {
+    const productsList = document.createElement("div");
+    productsList.classList.add("product-list");
+    const getProducts = async function(URI) {
+        try {
+            const response = await fetch(URI);
+            if (response.status === 404) throw new Error("Goods are not found!");
+            const data = await response.json();
+            const list = document.createElement("ul");
+            list.classList.add("product-list__list");
+            for (const product of data){
+                const productCard = (0, _productCardJs.getProductCard)(product);
+                list.append(productCard);
+            }
+            productsList.append(list);
+        } catch (error) {
+            const msg = document.createElement("span");
+            msg.classList.add("products-list__msg");
+            msg.textContent = error.message;
+            productsList.append(msg);
+        }
+    };
+    return {
+        productsList,
+        getProducts
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./productsList.css":"dMm9t","/src/js/components/productCard/productCard.js":"9WzTu"}],"dMm9t":[function() {},{}],"9WzTu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 //Product Cards
@@ -627,6 +665,12 @@ function getProductCard(product) {
     return item;
 }
 
-},{"/src/js/main":"1SICI","./productCard.css":"8FtH3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8FtH3":[function() {},{}]},["62zNd"], null, "parcelRequiref824")
+},{"/src/js/main":"1SICI","./productCard.css":"8FtH3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8FtH3":[function() {},{}],"k5Hzs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "URL", ()=>URL);
+const URL = "https://shop-frontent.ru";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["62zNd"], null, "parcelRequiref824")
 
 //# sourceMappingURL=main.00ff3c8c.js.map

@@ -3,6 +3,23 @@
   margin-bottom: 20px;
 }
 
+.product-list__list {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+}
+
+.products-list__msg {
+  text-align: center;
+  color: gray;
+  width: 100%;
+  padding: 20px 0;
+  display: block;
+}
+
 .product {
   border: 1px solid gray;
   border-radius: 15px;

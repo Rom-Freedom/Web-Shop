@@ -1,5 +1,6 @@
 import { getMainTitle} from '/src/js/components/mainTitle/mainTitle.js'
-import { getProductCard } from '/src/js/components/productCard/productCard.js'
+import { getProductList } from '/src/js/components/productsList/productsList.js'
+import { URL } from '/src/js/config.js'
 
 //Main Page
 export function getMainPage() {
@@ -7,8 +8,10 @@ export function getMainPage() {
     page.classList.add('page', 'main-page', 'container')
 
     const mainTitle = getMainTitle('Main Page')
-    
 
-page.append(mainTitle)
-return page
+    const product = getProductList()
+    product.getProducts(`${URL}/wp-json/wp/v1/products`)
+    
+    page.append(mainTitle, product.productsList)
+    return page
 }
