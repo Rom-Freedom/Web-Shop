@@ -591,7 +591,7 @@ function getMainPage() {
     page.classList.add("page", "main-page", "container");
     const mainTitle = (0, _mainTitleJs.getMainTitle)("Main Page");
     const product = (0, _productsListJs.getProductList)();
-    product.getProducts(`${(0, _configJs.URL)}/wp-json/wp/v1/products`);
+    product.getProducts(`${(0, _configJs.URL)}/wp-json/wp/v1/products?count=4`);
     page.append(mainTitle, product.productsList);
     return page;
 }

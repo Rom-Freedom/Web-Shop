@@ -10,7 +10,7 @@ export function getMainPage() {
     const mainTitle = getMainTitle('Main Page')
 
     const product = getProductList()
-    product.getProducts(`${URL}/wp-json/wp/v1/products`)
+    product.getProducts(`${URL}/wp-json/wp/v1/products?count=4`)
     
     page.append(mainTitle, product.productsList)
     return page
